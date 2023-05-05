@@ -30,31 +30,41 @@ namespace QLyQuanAn
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnXacNhan = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lsvBillFood = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.cbBan = new System.Windows.Forms.ComboBox();
+            this.cbLoaiHoaDon = new System.Windows.Forms.ComboBox();
             this.lbPrice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txbSearch = new System.Windows.Forms.TextBox();
+            this.nudSoluong = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cbLoaiMon = new System.Windows.Forms.ComboBox();
+            this.dtgvMon = new System.Windows.Forms.DataGridView();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoluong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnHuy);
+            this.panel1.Controls.Add(this.btnXacNhan);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(-3, -1);
@@ -62,55 +72,99 @@ namespace QLyQuanAn
             this.panel1.Size = new System.Drawing.Size(1081, 582);
             this.panel1.TabIndex = 0;
             // 
-            // button2
+            // btnHuy
             // 
-            this.button2.Location = new System.Drawing.Point(972, 527);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 45);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHuy.Location = new System.Drawing.Point(972, 527);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(106, 45);
+            this.btnHuy.TabIndex = 3;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnXacNhan
             // 
-            this.button1.Location = new System.Drawing.Point(847, 527);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 45);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Xác nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Enabled = false;
+            this.btnXacNhan.Location = new System.Drawing.Point(847, 527);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(106, 45);
+            this.btnXacNhan.TabIndex = 2;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel3.Controls.Add(this.comboBox2);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.lsvBillFood);
+            this.panel3.Controls.Add(this.cbBan);
+            this.panel3.Controls.Add(this.cbLoaiHoaDon);
             this.panel3.Controls.Add(this.lbPrice);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.listBox1);
             this.panel3.Location = new System.Drawing.Point(717, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(361, 518);
             this.panel3.TabIndex = 1;
             // 
-            // comboBox2
+            // lsvBillFood
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(190, 7);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(171, 39);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.lsvBillFood.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvBillFood.GridLines = true;
+            this.lsvBillFood.HideSelection = false;
+            this.lsvBillFood.Location = new System.Drawing.Point(0, 50);
+            this.lsvBillFood.Name = "lsvBillFood";
+            this.lsvBillFood.Size = new System.Drawing.Size(361, 424);
+            this.lsvBillFood.TabIndex = 5;
+            this.lsvBillFood.UseCompatibleStateImageBehavior = false;
+            this.lsvBillFood.View = System.Windows.Forms.View.Details;
+            this.lsvBillFood.SelectedIndexChanged += new System.EventHandler(this.lsvBillFood_SelectedIndexChanged);
             // 
-            // comboBox1
+            // columnHeader1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(0, 7);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 39);
-            this.comboBox1.TabIndex = 3;
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 120;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Giá";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "SL";
+            this.columnHeader3.Width = 40;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 100;
+            // 
+            // cbBan
+            // 
+            this.cbBan.Enabled = false;
+            this.cbBan.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbBan.FormattingEnabled = true;
+            this.cbBan.Location = new System.Drawing.Point(190, 7);
+            this.cbBan.Name = "cbBan";
+            this.cbBan.Size = new System.Drawing.Size(171, 39);
+            this.cbBan.TabIndex = 4;
+            this.cbBan.SelectedIndexChanged += new System.EventHandler(this.cbBan_SelectedIndexChanged);
+            // 
+            // cbLoaiHoaDon
+            // 
+            this.cbLoaiHoaDon.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbLoaiHoaDon.FormattingEnabled = true;
+            this.cbLoaiHoaDon.Items.AddRange(new object[] {
+            "Ngồi lại",
+            "Mang đi"});
+            this.cbLoaiHoaDon.Location = new System.Drawing.Point(0, 7);
+            this.cbLoaiHoaDon.Name = "cbLoaiHoaDon";
+            this.cbLoaiHoaDon.Size = new System.Drawing.Size(184, 39);
+            this.cbLoaiHoaDon.TabIndex = 3;
+            this.cbLoaiHoaDon.SelectedIndexChanged += new System.EventHandler(this.cbLoaiHoaDon_SelectedIndexChanged);
             // 
             // lbPrice
             // 
@@ -118,9 +172,9 @@ namespace QLyQuanAn
             this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbPrice.Location = new System.Drawing.Point(223, 480);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(29, 31);
+            this.lbPrice.Size = new System.Drawing.Size(79, 31);
             this.lbPrice.TabIndex = 2;
-            this.lbPrice.Text = "...";
+            this.lbPrice.Text = "0 VNĐ";
             // 
             // label1
             // 
@@ -132,46 +186,38 @@ namespace QLyQuanAn
             this.label1.TabIndex = 1;
             this.label1.Text = "Tổng tiền";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(0, 53);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(364, 424);
-            this.listBox1.TabIndex = 0;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.numericUpDown1);
+            this.panel2.Controls.Add(this.txbSearch);
+            this.panel2.Controls.Add(this.nudSoluong);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.cbLoaiMon);
+            this.panel2.Controls.Add(this.dtgvMon);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(711, 579);
             this.panel2.TabIndex = 0;
             // 
-            // textBox1
+            // txbSearch
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(252, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 38);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "Tìm kiếm";
-            this.textBox1.Click += new System.EventHandler(this.textBox1_Click);
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(252, 6);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(265, 38);
+            this.txbSearch.TabIndex = 7;
+            this.txbSearch.Text = "Tìm kiếm";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
-            // numericUpDown1
+            // nudSoluong
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown1.Location = new System.Drawing.Point(523, 6);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(60, 38);
-            this.numericUpDown1.TabIndex = 6;
+            this.nudSoluong.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudSoluong.Location = new System.Drawing.Point(523, 6);
+            this.nudSoluong.Name = "nudSoluong";
+            this.nudSoluong.Size = new System.Drawing.Size(60, 38);
+            this.nudSoluong.TabIndex = 6;
+            this.nudSoluong.ValueChanged += new System.EventHandler(this.nudSoluong_ValueChanged);
             // 
             // button3
             // 
@@ -181,25 +227,75 @@ namespace QLyQuanAn
             this.button3.TabIndex = 4;
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // comboBox3
+            // cbLoaiMon
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(8, 6);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(238, 39);
-            this.comboBox3.TabIndex = 5;
+            this.cbLoaiMon.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbLoaiMon.FormattingEnabled = true;
+            this.cbLoaiMon.Location = new System.Drawing.Point(8, 6);
+            this.cbLoaiMon.Name = "cbLoaiMon";
+            this.cbLoaiMon.Size = new System.Drawing.Size(238, 39);
+            this.cbLoaiMon.TabIndex = 5;
+            this.cbLoaiMon.SelectedIndexChanged += new System.EventHandler(this.cbxLoaiMon_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // dtgvMon
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(705, 526);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvMon.AllowUserToAddRows = false;
+            this.dtgvMon.AllowUserToDeleteRows = false;
+            this.dtgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMon.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dtgvMon.Location = new System.Drawing.Point(3, 50);
+            this.dtgvMon.Name = "dtgvMon";
+            this.dtgvMon.ReadOnly = true;
+            this.dtgvMon.RowHeadersWidth = 51;
+            this.dtgvMon.RowTemplate.Height = 29;
+            this.dtgvMon.Size = new System.Drawing.Size(705, 529);
+            this.dtgvMon.TabIndex = 0;
+            this.dtgvMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMon_CellClick);
+            // 
+            // TenMon
+            // 
+            this.TenMon.HeaderText = "TenMon";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 125;
+            // 
+            // GiaTien
+            // 
+            this.GiaTien.HeaderText = "GiaTien";
+            this.GiaTien.MinimumWidth = 6;
+            this.GiaTien.Name = "GiaTien";
+            this.GiaTien.Width = 125;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.HeaderText = "TinhTrang";
+            this.TinhTrang.MinimumWidth = 6;
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.Width = 125;
+            // 
+            // LoaiMon
+            // 
+            this.LoaiMon.HeaderText = "LoaiMon";
+            this.LoaiMon.MinimumWidth = 6;
+            this.LoaiMon.Name = "LoaiMon";
+            this.LoaiMon.Width = 125;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.HeaderText = "GhiChu";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdMon";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã món";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
             // fAddBill
             // 
@@ -214,8 +310,8 @@ namespace QLyQuanAn
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSoluong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,18 +320,28 @@ namespace QLyQuanAn
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbBan;
+        private System.Windows.Forms.ComboBox cbLoaiHoaDon;
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnXacNhan;
+        private System.Windows.Forms.TextBox txbSearch;
+        private System.Windows.Forms.NumericUpDown nudSoluong;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cbLoaiMon;
+        private System.Windows.Forms.ListView lsvBillFood;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.DataGridView dtgvMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

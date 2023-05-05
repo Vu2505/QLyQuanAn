@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QLyQuanAn.DAO;
+using QLyQuanAn.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +12,9 @@ using System.Windows.Forms;
 
 namespace QLyQuanAn
 {
-    public partial class Login : Form
+    public partial class fLogin : Form
     {
-        public Login()
+        public fLogin()
         {
             InitializeComponent();
         }
@@ -29,8 +31,50 @@ namespace QLyQuanAn
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fMain f = new fMain();
-            f.Show();
+            String userName = txbUserName.Text;
+            string passWord = txbPassWord.Text;
+            if(userName == null || userName == "" 
+                || passWord == null || passWord == "")
+            {
+                MessageBox.Show("Chưa nhập username hay password");
+                return;
+            }
+
+            Account acc = Login(userName, passWord);
+            if (acc != null)
+            {
+                Storage.Account.SetAccount(acc);
+                fMain f = new fMain();
+                this.Hide();
+                f.ShowDialog();
+
+                txbPassWord.Text = "";
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
+        }
+
+
+        Account Login (String userName, String passWord)
+        {
+            return AccountDAO.Instance.Login(userName,passWord);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Bạn có thực sự muốn thoát chương trình?", "Thông báo",MessageBoxButtons.OKCancel) 
+                != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
