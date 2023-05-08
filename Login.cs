@@ -55,6 +55,8 @@ namespace QLyQuanAn
             {
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
             }
+
+           
         }
 
 
@@ -74,6 +76,39 @@ namespace QLyQuanAn
                 != System.Windows.Forms.DialogResult.OK)
             {
                 e.Cancel = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbUserName_Click(object sender, EventArgs e)
+        {
+            txbUserName.BackColor = Color.White;
+            panelUserName.BackColor = Color.White;
+            panelPassword.BackColor = SystemColors.Control;
+            txbPassWord.BackColor = SystemColors.Control;
+        }
+
+        private void txbPassWord_TextChanged(object sender, EventArgs e)
+        {
+            txbPassWord.BackColor = Color.White;
+            panelPassword.BackColor = Color.White;
+            panelUserName.BackColor = SystemColors.Control;
+            txbUserName.BackColor = SystemColors.Control;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                txbPassWord.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txbPassWord.UseSystemPasswordChar = true;
             }
         }
     }

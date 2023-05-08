@@ -75,7 +75,7 @@ namespace QLyQuanAn
             // ptbAccept
             // 
             this.ptbAccept.BackColor = System.Drawing.SystemColors.Control;
-            this.ptbAccept.BackgroundImage = global::QLyQuanAn.Properties.Resources.yes;
+            this.ptbAccept.BackgroundImage = global::QLyQuanAn.Properties.Resources.check;
             this.ptbAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ptbAccept.Location = new System.Drawing.Point(432, 266);
             this.ptbAccept.Name = "ptbAccept";
@@ -87,7 +87,7 @@ namespace QLyQuanAn
             // ptbDeny
             // 
             this.ptbDeny.BackColor = System.Drawing.SystemColors.Control;
-            this.ptbDeny.BackgroundImage = global::QLyQuanAn.Properties.Resources.remove;
+            this.ptbDeny.BackgroundImage = global::QLyQuanAn.Properties.Resources.delete;
             this.ptbDeny.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ptbDeny.Location = new System.Drawing.Point(432, 266);
             this.ptbDeny.Name = "ptbDeny";
@@ -102,14 +102,14 @@ namespace QLyQuanAn
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 34);
+            this.panel2.Size = new System.Drawing.Size(472, 44);
             this.panel2.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(89, 2);
+            this.label5.Location = new System.Drawing.Point(89, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(302, 31);
             this.label5.TabIndex = 0;
@@ -178,7 +178,6 @@ namespace QLyQuanAn
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(261, 27);
             this.txbUsername.TabIndex = 4;
-            this.txbUsername.Text = "cvzvz";
             // 
             // label4
             // 

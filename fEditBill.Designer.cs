@@ -74,12 +74,14 @@ namespace QLyQuanAn
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(585, 8);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 38);
             this.button3.TabIndex = 9;
             this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // cbLoaiMon
@@ -105,28 +107,32 @@ namespace QLyQuanAn
             // 
             // btnHuy
             // 
+            this.btnHuy.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Location = new System.Drawing.Point(967, 528);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(106, 45);
             this.btnHuy.TabIndex = 15;
             this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnXacNhan
             // 
+            this.btnXacNhan.BackColor = System.Drawing.SystemColors.Control;
             this.btnXacNhan.Enabled = false;
+            this.btnXacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXacNhan.Location = new System.Drawing.Point(843, 528);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(106, 45);
             this.btnXacNhan.TabIndex = 14;
             this.btnXacNhan.Text = "Xác nhận";
-            this.btnXacNhan.UseVisualStyleBackColor = true;
+            this.btnXacNhan.UseVisualStyleBackColor = false;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.panel3.Controls.Add(this.lsvBillFood);
             this.panel3.Controls.Add(this.cbBan);
             this.panel3.Controls.Add(this.cbLoaiHoaDon);
@@ -191,9 +197,9 @@ namespace QLyQuanAn
             this.cbLoaiHoaDon.Items.AddRange(new object[] {
             "Ngồi lại",
             "Chuyển bàn"});
-            this.cbLoaiHoaDon.Location = new System.Drawing.Point(0, 7);
+            this.cbLoaiHoaDon.Location = new System.Drawing.Point(3, 7);
             this.cbLoaiHoaDon.Name = "cbLoaiHoaDon";
-            this.cbLoaiHoaDon.Size = new System.Drawing.Size(184, 39);
+            this.cbLoaiHoaDon.Size = new System.Drawing.Size(181, 39);
             this.cbLoaiHoaDon.TabIndex = 3;
             this.cbLoaiHoaDon.Text = "Ngồi lại";
             this.cbLoaiHoaDon.SelectedIndexChanged += new System.EventHandler(this.cbLoaiHoaDon_SelectedIndexChanged);
@@ -222,6 +228,7 @@ namespace QLyQuanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1078, 580);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXacNhan);

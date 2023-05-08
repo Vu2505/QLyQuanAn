@@ -59,11 +59,24 @@ namespace QLyQuanAn.DAO
 
         public int UpdateTinhTrangBan(int idBan)
         {
-            string query = "UPDATE Ban " +
+            try
+            {
+                string query = "SELECT TinhTrang from Ban WHERE IdBan = " + idBan;
+                var status = int.Parse(DataProvider.Instance.ExecuteScalar(query).ToString());
+                
+                if (status == 3)
+                    return 1;
+            } 
+            catch(Exception e)
+            {
+                Console.Error.WriteLine(e.Message);
+            }
+
+            string updateQuery = "UPDATE Ban " +
                 "SET TinhTrang = 1 " +
                 "WHERE IdBan = " + idBan;
 
-            return DataProvider.Instance.ExecuteNonQuery(query);
+            return DataProvider.Instance.ExecuteNonQuery(updateQuery);
         }
 
 

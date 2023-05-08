@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 
@@ -15,6 +16,7 @@ namespace QLyQuanAn
         BindingSource foodlist = new BindingSource();
         BindingSource tablelist = new BindingSource();
         BindingSource accountlist = new BindingSource();
+        BindingSource categorylist = new BindingSource();
         public fDanhMuc()
         {
             InitializeComponent();
@@ -26,10 +28,12 @@ namespace QLyQuanAn
             dtgvDanhMucFood.DataSource = foodlist;
             dtgvDanhMucBan.DataSource = tablelist;
             dtgvDanhMucAccount.DataSource = accountlist;
+            dtgvLoaiMon.DataSource = categorylist;
             LoadListBan();
             LoadListHoaDon();
             LoadListFood();
             LoadListAccount();
+            LoadListCategory();
             LoadCategoryIntoComboBox(cbFoodLoai);
             
         }
@@ -38,7 +42,6 @@ namespace QLyQuanAn
             //string query = "Select * from Mon";
             //foodlist.DataSource = DataProvider.Instance.ExecuteQuery(query);
             foodlist.DataSource = FoodDAO.Instance.GetListFood();
-           
             AddFoodBinding();
         }
 
@@ -54,6 +57,24 @@ namespace QLyQuanAn
             AddAccountBinding();
         }
 
+        void LoadListCategory()
+        {
+            categorylist.DataSource = CategoryDAO.Instance.GetListCategory();
+            AddCategoryBinding();
+        }
+
+        void AddCategoryBinding()
+        {
+            DeleteCategoryBinding();
+            txbIDLoaiMon.DataBindings.Add(new Binding("Text", dtgvLoaiMon.DataSource, "ID"));
+            txbNameLoaiMon.DataBindings.Add(new Binding("Text", dtgvLoaiMon.DataSource, "TenLoaiMon", true, DataSourceUpdateMode.Never));
+        }
+
+        void DeleteCategoryBinding()
+        {
+            txbIDLoaiMon.DataBindings.Clear();
+            txbNameLoaiMon.DataBindings.Clear();
+        }
         void AddAccountBinding()
         {
             DeleteAccountBinding();
@@ -218,7 +239,7 @@ namespace QLyQuanAn
 
         void LoadListHoaDon()
         {
-            string query = "Select * from HoaDon where TinhTrang = 1";
+            string query = "Select * from HoaDon";
             dtgvDanhMucHoaDon.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
 
@@ -226,6 +247,13 @@ namespace QLyQuanAn
         {
             List<Food> listFood = FoodDAO.Instance.SearchFoodByName(name);
             return listFood;
+
+        }
+
+        List<Category> SearchCategoryByName(string name)
+        {
+            List<Category> listCategory = CategoryDAO.Instance.SearchCategoryByName(name);
+            return listCategory;
 
         }
 
@@ -445,6 +473,67 @@ namespace QLyQuanAn
             LoadListBan();
         }
 
-   
+        private void btnInsertLoaiMon_Click(object sender, EventArgs e)
+        {
+            DeleteCategoryBinding();
+            txbNameLoaiMon.Enabled = true;
+            txbIDLoaiMon.Clear();
+            txbNameLoaiMon.Clear();
+        }
+
+        private void btnEditLoaiMon_Click(object sender, EventArgs e)
+        {
+            txbNameLoaiMon.Enabled = true;
+        }
+
+        private void btnSaveLoaiMon_Click(object sender, EventArgs e)
+        {
+
+            string name =txbNameLoaiMon.Text;
+
+            if (txbIDLoaiMon == null || txbIDLoaiMon.Text == "")
+            {
+                if (CategoryDAO.Instance.InsertCategoryFood(name))
+                {
+                    MessageBox.Show("Thêm loại món thành công");
+                    LoadListCategory();
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi thêm loại món");
+                }
+            }
+            else
+            {
+                int id = Convert.ToInt32(txbIDLoaiMon.Text);
+                if (CategoryDAO.Instance.UpdateCategoryFood(id, name))
+                {
+                    MessageBox.Show("Sửa bàn thành công");
+                    LoadListCategory();
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi khi Sửa bàn");
+                }
+            }
+
+            LoadListCategory();
+        }
+
+        private void txbSearchLoaiMon_TextChanged(object sender, EventArgs e)
+        {
+            categorylist.DataSource = SearchCategoryByName(txbSearchLoaiMon.Text);
+        }
+
+        void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+           dtgvDoanhThu.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
+            CultureInfo culture = new CultureInfo("vi-VN");
+            lbPrice_DT.Text = BillDAO.Instance.GetTotalByDate(checkIn, checkOut).ToString("N0", culture) + " VND"; 
+        }
+        private void btnThongKeDoanhThu_Click(object sender, EventArgs e)
+        {
+            LoadListBillByDate(dtpCheckIn.Value, dtpCheckOut.Value);
+        }
     }
 }

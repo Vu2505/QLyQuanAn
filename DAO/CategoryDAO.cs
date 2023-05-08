@@ -47,5 +47,41 @@ namespace QLyQuanAn.DAO
 
             return category;
         }
+
+
+        public bool InsertCategoryFood(string name)
+        {
+            string query = string.Format("insert into LoaiMon (TenMon)" +
+                         " values (N'{0}')", name);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool UpdateCategoryFood(int idloaifood, string name)
+        {
+            string query = string.Format("Update dbo.Mon " +
+                         " set TenMon =N'{0}'" +
+                         "where IdMon ={1} ", name, idloaifood);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public List<Category> SearchCategoryByName(string name)
+        {
+
+            List<Category> list = new List<Category>();
+            string query = string.Format("select * from LoaiMon where TenLoaiMon like N'%{0}%'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Category category = new Category(item);
+                list.Add(category);
+            }
+
+            return list;
+        }
     }
 }

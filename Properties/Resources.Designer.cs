@@ -63,9 +63,274 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap remove {
+        internal static System.Drawing.Bitmap _2159419 {
             get {
-                object obj = ResourceManager.GetObject("remove", resourceCulture);
+                object obj = ResourceManager.GetObject("2159419", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _21594191 {
+            get {
+                object obj = ResourceManager.GetObject("21594191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _21594192 {
+            get {
+                object obj = ResourceManager.GetObject("21594192", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _21594193 {
+            get {
+                object obj = ResourceManager.GetObject("21594193", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5572970 {
+            get {
+                object obj = ResourceManager.GetObject("5572970", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _55729701 {
+            get {
+                object obj = ResourceManager.GetObject("55729701", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _55729702 {
+            get {
+                object obj = ResourceManager.GetObject("55729702", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _55729703 {
+            get {
+                object obj = ResourceManager.GetObject("55729703", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5879 {
+            get {
+                object obj = ResourceManager.GetObject("5879", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap authentic_asian_noodle_soup_black_bowl {
+            get {
+                object obj = ResourceManager.GetObject("authentic-asian-noodle-soup-black-bowl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Avatar__myself__people__profile__username_icon___Download_on_Iconfinder {
+            get {
+                object obj = ResourceManager.GetObject("Avatar, myself, people, profile, username icon - Download on Iconfinder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Avatar__myself__people__profile__username_icon___Download_on_Iconfinder__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Avatar, myself, people, profile, username icon - Download on Iconfinder (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bill__1_ {
+            get {
+                object obj = ResourceManager.GetObject("bill (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bill__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("bill (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bill__1___1_1 {
+            get {
+                object obj = ResourceManager.GetObject("bill (1) (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bill__1___1_2 {
+            get {
+                object obj = ResourceManager.GetObject("bill (1) (1)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chair__1___1_ {
+            get {
+                object obj = ResourceManager.GetObject("chair (1) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chair__1___1_1 {
+            get {
+                object obj = ResourceManager.GetObject("chair (1) (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check {
+            get {
+                object obj = ResourceManager.GetObject("check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_Icon_Clipart_PNG_Images__Vector_Lock_Icon__Lock_Icons__Lock__Secure_PNG_Image_For_Free_Download {
+            get {
+                object obj = ResourceManager.GetObject("Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Imag" +
+                        "e For Free Download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_Icon_Clipart_PNG_Images__Vector_Lock_Icon__Lock_Icons__Lock__Secure_PNG_Image_For_Free_Download1 {
+            get {
+                object obj = ResourceManager.GetObject("Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Imag" +
+                        "e For Free Download1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_Icon_Clipart_PNG_Images__Vector_Lock_Icon__Lock_Icons__Lock__Secure_PNG_Image_For_Free_Download2 {
+            get {
+                object obj = ResourceManager.GetObject("Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Imag" +
+                        "e For Free Download2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products__1_ {
+            get {
+                object obj = ResourceManager.GetObject("products (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("products (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile_Icon_Silhouette_PNG_Transparent__Avatar_Icon_Profile_Icon_Member_Login_Vector_Isolated__Login_Icons__Profile_Icons__Avatar_Icons_PNG_Image_For_Free_Download {
+            get {
+                object obj = ResourceManager.GetObject("Profile Icon Silhouette PNG Transparent, Avatar Icon Profile Icon Member Login Ve" +
+                        "ctor Isolated, Login Icons, Profile Icons, Avatar Icons PNG Image For Free Downl" +
+                        "oad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sdgdxhbfcnhf {
+            get {
+                object obj = ResourceManager.GetObject("sdgdxhbfcnhf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,16 +341,6 @@ namespace QLyQuanAn.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap yes {
-            get {
-                object obj = ResourceManager.GetObject("yes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

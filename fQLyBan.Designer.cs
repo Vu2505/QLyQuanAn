@@ -48,6 +48,7 @@ namespace QLyQuanAn
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.panel1.Controls.Add(this.flpBan);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
@@ -55,44 +56,51 @@ namespace QLyQuanAn
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1081, 582);
+            this.panel1.Size = new System.Drawing.Size(1081, 585);
             this.panel1.TabIndex = 1;
             // 
             // flpBan
             // 
             this.flpBan.AutoScroll = true;
+            this.flpBan.BackColor = System.Drawing.Color.White;
             this.flpBan.Location = new System.Drawing.Point(0, 0);
             this.flpBan.Name = "flpBan";
-            this.flpBan.Size = new System.Drawing.Size(711, 582);
+            this.flpBan.Size = new System.Drawing.Size(663, 582);
             this.flpBan.TabIndex = 5;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(720, 527);
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(670, 529);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 45);
+            this.button3.Size = new System.Drawing.Size(94, 45);
             this.button3.TabIndex = 4;
             this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(971, 527);
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(967, 529);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 45);
             this.button2.TabIndex = 3;
             this.button2.Text = "Hủy";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(847, 527);
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(823, 529);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 45);
+            this.button1.Size = new System.Drawing.Size(122, 45);
             this.button1.TabIndex = 2;
             this.button1.Text = "Thanh toán";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
@@ -101,9 +109,9 @@ namespace QLyQuanAn
             this.panel3.Controls.Add(this.lsvBill);
             this.panel3.Controls.Add(this.lbPrice);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(717, 3);
+            this.panel3.Location = new System.Drawing.Point(669, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(361, 518);
+            this.panel3.Size = new System.Drawing.Size(409, 518);
             this.panel3.TabIndex = 1;
             // 
             // lsvBill
@@ -115,9 +123,9 @@ namespace QLyQuanAn
             this.columnHeader4});
             this.lsvBill.GridLines = true;
             this.lsvBill.HideSelection = false;
-            this.lsvBill.Location = new System.Drawing.Point(0, 0);
+            this.lsvBill.Location = new System.Drawing.Point(0, -3);
             this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(361, 474);
+            this.lsvBill.Size = new System.Drawing.Size(409, 477);
             this.lsvBill.TabIndex = 3;
             this.lsvBill.UseCompatibleStateImageBehavior = false;
             this.lsvBill.View = System.Windows.Forms.View.Details;
@@ -125,7 +133,7 @@ namespace QLyQuanAn
             // columnHeader1
             // 
             this.columnHeader1.Text = "Tên món";
-            this.columnHeader1.Width = 120;
+            this.columnHeader1.Width = 170;
             // 
             // columnHeader2
             // 
@@ -166,7 +174,7 @@ namespace QLyQuanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 580);
+            this.ClientSize = new System.Drawing.Size(1078, 582);
             this.Controls.Add(this.panel1);
             this.Name = "fQLyBan";
             this.Text = "fQLyBan";

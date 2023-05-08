@@ -32,9 +32,15 @@ namespace QLyQuanAn
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtgvDanhMucFood = new System.Windows.Forms.DataGridView();
+            this.IdMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -53,10 +59,27 @@ namespace QLyQuanAn
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dtgvLoaiMon = new System.Windows.Forms.DataGridView();
+            this.IdLoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txbSearchLoaiMon = new System.Windows.Forms.TextBox();
+            this.grbDanhMucMon = new System.Windows.Forms.GroupBox();
+            this.btnSaveLoaiMon = new System.Windows.Forms.Button();
+            this.btnEditLoaiMon = new System.Windows.Forms.Button();
+            this.btnInsertLoaiMon = new System.Windows.Forms.Button();
+            this.txbNameLoaiMon = new System.Windows.Forms.TextBox();
+            this.txbIDLoaiMon = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.dtgvDanhMucBan = new System.Windows.Forms.DataGridView();
+            this.IdBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbSearchTable = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnSaveTable = new System.Windows.Forms.Button();
@@ -73,8 +96,14 @@ namespace QLyQuanAn
             this.label14 = new System.Windows.Forms.Label();
             this.tabAccount = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dtgvDanhMucAccount = new System.Windows.Forms.DataGridView();
+            this.IdTK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbSearchAccount = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnSaveAccount = new System.Windows.Forms.Button();
@@ -97,8 +126,18 @@ namespace QLyQuanAn
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lbPrice_DT = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnThongKeDoanhThu = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.dtpCheckOut = new System.Windows.Forms.DateTimePicker();
+            this.dtpCheckIn = new System.Windows.Forms.DateTimePicker();
+            this.dtgvDoanhThu = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThongKeHoaDon = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -107,21 +146,26 @@ namespace QLyQuanAn
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucFood)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudFoodGia)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLoaiMon)).BeginInit();
+            this.grbDanhMucMon.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucBan)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tabAccount.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucAccount)).BeginInit();
             this.groupBox6.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhThu)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucHoaDon)).BeginInit();
@@ -138,6 +182,7 @@ namespace QLyQuanAn
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabAccount);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -150,8 +195,7 @@ namespace QLyQuanAn
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -160,31 +204,40 @@ namespace QLyQuanAn
             this.tabPage1.Text = "Món ăn";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.panel3.Controls.Add(this.groupBox3);
+            this.panel3.Controls.Add(this.groupBox1);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1076, 552);
+            this.panel3.TabIndex = 3;
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.dtgvDanhMucFood);
             this.groupBox3.Controls.Add(this.txbSearch);
-            this.groupBox3.Location = new System.Drawing.Point(10, 195);
+            this.groupBox3.Location = new System.Drawing.Point(13, 198);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1044, 338);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin món ăn";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox1.Location = new System.Drawing.Point(608, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 34);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
             // 
             // dtgvDanhMucFood
             // 
             this.dtgvDanhMucFood.AllowUserToOrderColumns = true;
+            this.dtgvDanhMucFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDanhMucFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhMucFood.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdMon,
+            this.TenMon,
+            this.GiaTien,
+            this.TinhTrang,
+            this.LoaiMon,
+            this.GhiChu});
             this.dtgvDanhMucFood.Location = new System.Drawing.Point(0, 67);
             this.dtgvDanhMucFood.Name = "dtgvDanhMucFood";
             this.dtgvDanhMucFood.RowHeadersWidth = 51;
@@ -192,16 +245,58 @@ namespace QLyQuanAn
             this.dtgvDanhMucFood.Size = new System.Drawing.Size(1044, 271);
             this.dtgvDanhMucFood.TabIndex = 18;
             // 
+            // IdMon
+            // 
+            this.IdMon.DataPropertyName = "ID";
+            this.IdMon.HeaderText = "Mã món ăn";
+            this.IdMon.MinimumWidth = 6;
+            this.IdMon.Name = "IdMon";
+            // 
+            // TenMon
+            // 
+            this.TenMon.DataPropertyName = "TenMon";
+            this.TenMon.HeaderText = "Tên món ăn";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            // 
+            // GiaTien
+            // 
+            this.GiaTien.DataPropertyName = "GiaTien";
+            this.GiaTien.HeaderText = "Giá Tiền";
+            this.GiaTien.MinimumWidth = 6;
+            this.GiaTien.Name = "GiaTien";
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.DataPropertyName = "TinhTrang";
+            this.TinhTrang.HeaderText = "Tình Trạng";
+            this.TinhTrang.MinimumWidth = 6;
+            this.TinhTrang.Name = "TinhTrang";
+            // 
+            // LoaiMon
+            // 
+            this.LoaiMon.DataPropertyName = "LoaiMon";
+            this.LoaiMon.HeaderText = "Loại món";
+            this.LoaiMon.MinimumWidth = 6;
+            this.LoaiMon.Name = "LoaiMon";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            // 
             // txbSearch
             // 
-            this.txbSearch.Location = new System.Drawing.Point(364, 26);
+            this.txbSearch.Location = new System.Drawing.Point(393, 27);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(213, 27);
             this.txbSearch.TabIndex = 19;
-            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.cbFoodLoai);
             this.groupBox1.Controls.Add(this.nudFoodGia);
@@ -218,21 +313,23 @@ namespace QLyQuanAn
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(10, 6);
+            this.groupBox1.Location = new System.Drawing.Point(13, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1044, 183);
+            this.groupBox1.Size = new System.Drawing.Size(1046, 183);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết món ăn";
             // 
             // btnLuu
             // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Location = new System.Drawing.Point(351, 132);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(94, 29);
             this.btnLuu.TabIndex = 21;
             this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // cbFoodLoai
@@ -264,32 +361,38 @@ namespace QLyQuanAn
             // 
             // btnAnBatFood
             // 
+            this.btnAnBatFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnAnBatFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnBatFood.Location = new System.Drawing.Point(236, 132);
             this.btnAnBatFood.Name = "btnAnBatFood";
             this.btnAnBatFood.Size = new System.Drawing.Size(94, 29);
             this.btnAnBatFood.TabIndex = 14;
             this.btnAnBatFood.Text = "Ẩn/Bật";
-            this.btnAnBatFood.UseVisualStyleBackColor = true;
+            this.btnAnBatFood.UseVisualStyleBackColor = false;
             this.btnAnBatFood.Click += new System.EventHandler(this.btnAnBatFood_Click);
             // 
             // btnEditFood
             // 
+            this.btnEditFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnEditFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditFood.Location = new System.Drawing.Point(124, 132);
             this.btnEditFood.Name = "btnEditFood";
             this.btnEditFood.Size = new System.Drawing.Size(94, 29);
             this.btnEditFood.TabIndex = 13;
             this.btnEditFood.Text = "Sửa";
-            this.btnEditFood.UseVisualStyleBackColor = true;
+            this.btnEditFood.UseVisualStyleBackColor = false;
             this.btnEditFood.Click += new System.EventHandler(this.btnEditFood_Click);
             // 
             // btnInsert
             // 
+            this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Location = new System.Drawing.Point(14, 131);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(94, 29);
             this.btnInsert.TabIndex = 12;
             this.btnInsert.Text = "Thêm";
-            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // txbFoodGhiChu
@@ -379,8 +482,156 @@ namespace QLyQuanAn
             this.label1.TabIndex = 0;
             this.label1.Text = "IDMon";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage5.Controls.Add(this.groupBox7);
+            this.tabPage5.Controls.Add(this.grbDanhMucMon);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1070, 548);
+            this.tabPage5.TabIndex = 5;
+            this.tabPage5.Text = "Danh mục món";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.White;
+            this.groupBox7.Controls.Add(this.dtgvLoaiMon);
+            this.groupBox7.Controls.Add(this.txbSearchLoaiMon);
+            this.groupBox7.Location = new System.Drawing.Point(12, 200);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(1044, 338);
+            this.groupBox7.TabIndex = 5;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Thông tin món ăn";
+            // 
+            // dtgvLoaiMon
+            // 
+            this.dtgvLoaiMon.AllowUserToOrderColumns = true;
+            this.dtgvLoaiMon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvLoaiMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvLoaiMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdLoaiMon,
+            this.TenLoaiMon});
+            this.dtgvLoaiMon.Location = new System.Drawing.Point(0, 67);
+            this.dtgvLoaiMon.Name = "dtgvLoaiMon";
+            this.dtgvLoaiMon.RowHeadersWidth = 51;
+            this.dtgvLoaiMon.RowTemplate.Height = 29;
+            this.dtgvLoaiMon.Size = new System.Drawing.Size(1044, 271);
+            this.dtgvLoaiMon.TabIndex = 18;
+            // 
+            // IdLoaiMon
+            // 
+            this.IdLoaiMon.DataPropertyName = "ID";
+            this.IdLoaiMon.HeaderText = "Mã loại món";
+            this.IdLoaiMon.MinimumWidth = 6;
+            this.IdLoaiMon.Name = "IdLoaiMon";
+            // 
+            // TenLoaiMon
+            // 
+            this.TenLoaiMon.DataPropertyName = "TenLoaiMon";
+            this.TenLoaiMon.HeaderText = "Tên loại món";
+            this.TenLoaiMon.MinimumWidth = 6;
+            this.TenLoaiMon.Name = "TenLoaiMon";
+            // 
+            // txbSearchLoaiMon
+            // 
+            this.txbSearchLoaiMon.Location = new System.Drawing.Point(393, 27);
+            this.txbSearchLoaiMon.Name = "txbSearchLoaiMon";
+            this.txbSearchLoaiMon.Size = new System.Drawing.Size(213, 27);
+            this.txbSearchLoaiMon.TabIndex = 19;
+            this.txbSearchLoaiMon.TextChanged += new System.EventHandler(this.txbSearchLoaiMon_TextChanged);
+            // 
+            // grbDanhMucMon
+            // 
+            this.grbDanhMucMon.BackColor = System.Drawing.Color.White;
+            this.grbDanhMucMon.Controls.Add(this.btnSaveLoaiMon);
+            this.grbDanhMucMon.Controls.Add(this.btnEditLoaiMon);
+            this.grbDanhMucMon.Controls.Add(this.btnInsertLoaiMon);
+            this.grbDanhMucMon.Controls.Add(this.txbNameLoaiMon);
+            this.grbDanhMucMon.Controls.Add(this.txbIDLoaiMon);
+            this.grbDanhMucMon.Controls.Add(this.label24);
+            this.grbDanhMucMon.Controls.Add(this.label25);
+            this.grbDanhMucMon.Location = new System.Drawing.Point(12, 11);
+            this.grbDanhMucMon.Name = "grbDanhMucMon";
+            this.grbDanhMucMon.Size = new System.Drawing.Size(1046, 183);
+            this.grbDanhMucMon.TabIndex = 4;
+            this.grbDanhMucMon.TabStop = false;
+            this.grbDanhMucMon.Text = "Thông tin chi tiết món ăn";
+            // 
+            // btnSaveLoaiMon
+            // 
+            this.btnSaveLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnSaveLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveLoaiMon.Location = new System.Drawing.Point(238, 132);
+            this.btnSaveLoaiMon.Name = "btnSaveLoaiMon";
+            this.btnSaveLoaiMon.Size = new System.Drawing.Size(94, 29);
+            this.btnSaveLoaiMon.TabIndex = 21;
+            this.btnSaveLoaiMon.Text = "Lưu";
+            this.btnSaveLoaiMon.UseVisualStyleBackColor = false;
+            this.btnSaveLoaiMon.Click += new System.EventHandler(this.btnSaveLoaiMon_Click);
+            // 
+            // btnEditLoaiMon
+            // 
+            this.btnEditLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnEditLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditLoaiMon.Location = new System.Drawing.Point(124, 132);
+            this.btnEditLoaiMon.Name = "btnEditLoaiMon";
+            this.btnEditLoaiMon.Size = new System.Drawing.Size(94, 29);
+            this.btnEditLoaiMon.TabIndex = 13;
+            this.btnEditLoaiMon.Text = "Sửa";
+            this.btnEditLoaiMon.UseVisualStyleBackColor = false;
+            this.btnEditLoaiMon.Click += new System.EventHandler(this.btnEditLoaiMon_Click);
+            // 
+            // btnInsertLoaiMon
+            // 
+            this.btnInsertLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnInsertLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsertLoaiMon.Location = new System.Drawing.Point(14, 131);
+            this.btnInsertLoaiMon.Name = "btnInsertLoaiMon";
+            this.btnInsertLoaiMon.Size = new System.Drawing.Size(94, 29);
+            this.btnInsertLoaiMon.TabIndex = 12;
+            this.btnInsertLoaiMon.Text = "Thêm";
+            this.btnInsertLoaiMon.UseVisualStyleBackColor = false;
+            this.btnInsertLoaiMon.Click += new System.EventHandler(this.btnInsertLoaiMon_Click);
+            // 
+            // txbNameLoaiMon
+            // 
+            this.txbNameLoaiMon.Location = new System.Drawing.Point(144, 83);
+            this.txbNameLoaiMon.Name = "txbNameLoaiMon";
+            this.txbNameLoaiMon.Size = new System.Drawing.Size(208, 27);
+            this.txbNameLoaiMon.TabIndex = 7;
+            // 
+            // txbIDLoaiMon
+            // 
+            this.txbIDLoaiMon.Location = new System.Drawing.Point(144, 38);
+            this.txbIDLoaiMon.Name = "txbIDLoaiMon";
+            this.txbIDLoaiMon.Size = new System.Drawing.Size(208, 27);
+            this.txbIDLoaiMon.TabIndex = 6;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(14, 83);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(118, 20);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "Tên Loại món ăn";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(16, 42);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 20);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "IDLoaiMon";
+            // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -389,42 +640,66 @@ namespace QLyQuanAn
             this.tabPage2.Size = new System.Drawing.Size(1070, 548);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bàn";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.dtgvDanhMucBan);
             this.groupBox2.Controls.Add(this.txbSearchTable);
-            this.groupBox2.Location = new System.Drawing.Point(10, 195);
+            this.groupBox2.Location = new System.Drawing.Point(12, 195);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1044, 347);
+            this.groupBox2.Size = new System.Drawing.Size(1044, 344);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin bàn";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox2.Location = new System.Drawing.Point(608, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 34);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
             // dtgvDanhMucBan
             // 
+            this.dtgvDanhMucBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDanhMucBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhMucBan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdBan,
+            this.TenBan,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
             this.dtgvDanhMucBan.Location = new System.Drawing.Point(0, 67);
             this.dtgvDanhMucBan.Name = "dtgvDanhMucBan";
             this.dtgvDanhMucBan.RowHeadersWidth = 51;
             this.dtgvDanhMucBan.RowTemplate.Height = 29;
-            this.dtgvDanhMucBan.Size = new System.Drawing.Size(1044, 271);
+            this.dtgvDanhMucBan.Size = new System.Drawing.Size(1044, 277);
             this.dtgvDanhMucBan.TabIndex = 18;
+            // 
+            // IdBan
+            // 
+            this.IdBan.DataPropertyName = "ID";
+            this.IdBan.HeaderText = "Mã bàn";
+            this.IdBan.MinimumWidth = 6;
+            this.IdBan.Name = "IdBan";
+            // 
+            // TenBan
+            // 
+            this.TenBan.DataPropertyName = "TenBan";
+            this.TenBan.HeaderText = "Tên bàn";
+            this.TenBan.MinimumWidth = 6;
+            this.TenBan.Name = "TenBan";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "GhiChu";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Ghi chú";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TinhTrang";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tình trạng";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // txbSearchTable
             // 
-            this.txbSearchTable.Location = new System.Drawing.Point(364, 26);
+            this.txbSearchTable.Location = new System.Drawing.Point(382, 26);
             this.txbSearchTable.Name = "txbSearchTable";
             this.txbSearchTable.Size = new System.Drawing.Size(213, 27);
             this.txbSearchTable.TabIndex = 19;
@@ -432,6 +707,7 @@ namespace QLyQuanAn
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.btnSaveTable);
             this.groupBox4.Controls.Add(this.txbTableName);
             this.groupBox4.Controls.Add(this.btnAnBatTable);
@@ -444,7 +720,7 @@ namespace QLyQuanAn
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Location = new System.Drawing.Point(10, 6);
+            this.groupBox4.Location = new System.Drawing.Point(13, 6);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(1044, 183);
             this.groupBox4.TabIndex = 3;
@@ -453,12 +729,13 @@ namespace QLyQuanAn
             // 
             // btnSaveTable
             // 
+            this.btnSaveTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnSaveTable.Location = new System.Drawing.Point(349, 132);
             this.btnSaveTable.Name = "btnSaveTable";
             this.btnSaveTable.Size = new System.Drawing.Size(94, 29);
             this.btnSaveTable.TabIndex = 20;
             this.btnSaveTable.Text = "Lưu";
-            this.btnSaveTable.UseVisualStyleBackColor = true;
+            this.btnSaveTable.UseVisualStyleBackColor = false;
             this.btnSaveTable.Click += new System.EventHandler(this.btnSaveTable_Click_1);
             // 
             // txbTableName
@@ -471,32 +748,35 @@ namespace QLyQuanAn
             // 
             // btnAnBatTable
             // 
+            this.btnAnBatTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnAnBatTable.Location = new System.Drawing.Point(236, 132);
             this.btnAnBatTable.Name = "btnAnBatTable";
             this.btnAnBatTable.Size = new System.Drawing.Size(94, 29);
             this.btnAnBatTable.TabIndex = 14;
             this.btnAnBatTable.Text = "Ẩn/Bật";
-            this.btnAnBatTable.UseVisualStyleBackColor = true;
+            this.btnAnBatTable.UseVisualStyleBackColor = false;
             this.btnAnBatTable.Click += new System.EventHandler(this.btnAnBatTable_Click);
             // 
             // btnSuaBan
             // 
+            this.btnSuaBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnSuaBan.Location = new System.Drawing.Point(124, 132);
             this.btnSuaBan.Name = "btnSuaBan";
             this.btnSuaBan.Size = new System.Drawing.Size(94, 29);
             this.btnSuaBan.TabIndex = 13;
             this.btnSuaBan.Text = "Sửa";
-            this.btnSuaBan.UseVisualStyleBackColor = true;
+            this.btnSuaBan.UseVisualStyleBackColor = false;
             this.btnSuaBan.Click += new System.EventHandler(this.btnSuaBan_Click);
             // 
             // tbnThemBan
             // 
+            this.tbnThemBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.tbnThemBan.Location = new System.Drawing.Point(14, 131);
             this.tbnThemBan.Name = "tbnThemBan";
             this.tbnThemBan.Size = new System.Drawing.Size(94, 29);
             this.tbnThemBan.TabIndex = 12;
             this.tbnThemBan.Text = "Thêm";
-            this.tbnThemBan.UseVisualStyleBackColor = true;
+            this.tbnThemBan.UseVisualStyleBackColor = false;
             this.tbnThemBan.Click += new System.EventHandler(this.tbnThemBan_Click);
             // 
             // txbTableGhiChu
@@ -561,6 +841,7 @@ namespace QLyQuanAn
             // 
             // tabAccount
             // 
+            this.tabAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.tabAccount.Controls.Add(this.groupBox5);
             this.tabAccount.Controls.Add(this.groupBox6);
             this.tabAccount.Location = new System.Drawing.Point(4, 29);
@@ -568,11 +849,10 @@ namespace QLyQuanAn
             this.tabAccount.Size = new System.Drawing.Size(1070, 548);
             this.tabAccount.TabIndex = 4;
             this.tabAccount.Text = "Tài khoản";
-            this.tabAccount.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.pictureBox3);
+            this.groupBox5.BackColor = System.Drawing.Color.White;
             this.groupBox5.Controls.Add(this.dtgvDanhMucAccount);
             this.groupBox5.Controls.Add(this.txbSearchAccount);
             this.groupBox5.Location = new System.Drawing.Point(13, 200);
@@ -582,25 +862,74 @@ namespace QLyQuanAn
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin tài khoản";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Gray;
-            this.pictureBox3.Location = new System.Drawing.Point(608, 22);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 34);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
             // dtgvDanhMucAccount
             // 
             this.dtgvDanhMucAccount.AllowUserToOrderColumns = true;
+            this.dtgvDanhMucAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDanhMucAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhMucAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdTK,
+            this.TenNV,
+            this.Username,
+            this.Matkhau,
+            this.LoaiTaiKhoan,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
             this.dtgvDanhMucAccount.Location = new System.Drawing.Point(0, 67);
             this.dtgvDanhMucAccount.Name = "dtgvDanhMucAccount";
             this.dtgvDanhMucAccount.RowHeadersWidth = 51;
             this.dtgvDanhMucAccount.RowTemplate.Height = 29;
             this.dtgvDanhMucAccount.Size = new System.Drawing.Size(1044, 271);
             this.dtgvDanhMucAccount.TabIndex = 18;
+            // 
+            // IdTK
+            // 
+            this.IdTK.DataPropertyName = "IdTK";
+            this.IdTK.HeaderText = "Mã tài khoản";
+            this.IdTK.MinimumWidth = 6;
+            this.IdTK.Name = "IdTK";
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên nhân viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            // 
+            // Username
+            // 
+            this.Username.DataPropertyName = "Username";
+            this.Username.HeaderText = "Username";
+            this.Username.MinimumWidth = 6;
+            this.Username.Name = "Username";
+            // 
+            // Matkhau
+            // 
+            this.Matkhau.DataPropertyName = "Matkhau";
+            this.Matkhau.HeaderText = "Mật khẩu";
+            this.Matkhau.MinimumWidth = 6;
+            this.Matkhau.Name = "Matkhau";
+            // 
+            // LoaiTaiKhoan
+            // 
+            this.LoaiTaiKhoan.DataPropertyName = "LoaiTaiKhoan";
+            this.LoaiTaiKhoan.HeaderText = "Loại tài khoản";
+            this.LoaiTaiKhoan.MinimumWidth = 6;
+            this.LoaiTaiKhoan.Name = "LoaiTaiKhoan";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "GhiChu";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Ghi chú";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "TinhTrang";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Tình trạng";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // txbSearchAccount
             // 
@@ -612,6 +941,7 @@ namespace QLyQuanAn
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.White;
             this.groupBox6.Controls.Add(this.btnSaveAccount);
             this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.txbPassWord);
@@ -640,22 +970,24 @@ namespace QLyQuanAn
             // 
             // btnSaveAccount
             // 
+            this.btnSaveAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnSaveAccount.Location = new System.Drawing.Point(609, 130);
             this.btnSaveAccount.Name = "btnSaveAccount";
             this.btnSaveAccount.Size = new System.Drawing.Size(94, 29);
             this.btnSaveAccount.TabIndex = 26;
             this.btnSaveAccount.Text = "Lưu";
-            this.btnSaveAccount.UseVisualStyleBackColor = true;
+            this.btnSaveAccount.UseVisualStyleBackColor = false;
             this.btnSaveAccount.Click += new System.EventHandler(this.btnSaveAccount_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.button1.Location = new System.Drawing.Point(835, 129);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 25;
             this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // txbPassWord
             // 
@@ -692,32 +1024,35 @@ namespace QLyQuanAn
             // 
             // btnBatAn
             // 
+            this.btnBatAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnBatAn.Location = new System.Drawing.Point(721, 130);
             this.btnBatAn.Name = "btnBatAn";
             this.btnBatAn.Size = new System.Drawing.Size(94, 29);
             this.btnBatAn.TabIndex = 18;
             this.btnBatAn.Text = "Bật/Ẩn";
-            this.btnBatAn.UseVisualStyleBackColor = true;
+            this.btnBatAn.UseVisualStyleBackColor = false;
             this.btnBatAn.Click += new System.EventHandler(this.btnBatAn_Click);
             // 
             // btnEditAccount
             // 
+            this.btnEditAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnEditAccount.Location = new System.Drawing.Point(497, 131);
             this.btnEditAccount.Name = "btnEditAccount";
             this.btnEditAccount.Size = new System.Drawing.Size(94, 29);
             this.btnEditAccount.TabIndex = 14;
             this.btnEditAccount.Text = "Sửa";
-            this.btnEditAccount.UseVisualStyleBackColor = true;
+            this.btnEditAccount.UseVisualStyleBackColor = false;
             this.btnEditAccount.Click += new System.EventHandler(this.btnEditAccount_Click);
             // 
             // btnInsertAccount
             // 
+            this.btnInsertAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnInsertAccount.Location = new System.Drawing.Point(385, 131);
             this.btnInsertAccount.Name = "btnInsertAccount";
             this.btnInsertAccount.Size = new System.Drawing.Size(94, 29);
             this.btnInsertAccount.TabIndex = 13;
             this.btnInsertAccount.Text = "Thêm";
-            this.btnInsertAccount.UseVisualStyleBackColor = true;
+            this.btnInsertAccount.UseVisualStyleBackColor = false;
             this.btnInsertAccount.Click += new System.EventHandler(this.btnInsertAccount_Click);
             // 
             // txbTinhTrangAccount
@@ -808,6 +1143,10 @@ namespace QLyQuanAn
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.lbPrice_DT);
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Controls.Add(this.panel4);
+            this.tabPage3.Controls.Add(this.dtgvDoanhThu);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -815,6 +1154,93 @@ namespace QLyQuanAn
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Doanh thu";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // lbPrice_DT
+            // 
+            this.lbPrice_DT.AutoSize = true;
+            this.lbPrice_DT.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbPrice_DT.Location = new System.Drawing.Point(253, 508);
+            this.lbPrice_DT.Name = "lbPrice_DT";
+            this.lbPrice_DT.Size = new System.Drawing.Size(79, 31);
+            this.lbPrice_DT.TabIndex = 5;
+            this.lbPrice_DT.Text = "0 VNĐ";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(9, 508);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(223, 31);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "TỔNG DOANH THU: ";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.panel4.Controls.Add(this.btnThongKeDoanhThu);
+            this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Controls.Add(this.dtpCheckOut);
+            this.panel4.Controls.Add(this.dtpCheckIn);
+            this.panel4.Location = new System.Drawing.Point(5, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1064, 67);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnThongKeDoanhThu
+            // 
+            this.btnThongKeDoanhThu.BackColor = System.Drawing.Color.White;
+            this.btnThongKeDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKeDoanhThu.Location = new System.Drawing.Point(474, 20);
+            this.btnThongKeDoanhThu.Name = "btnThongKeDoanhThu";
+            this.btnThongKeDoanhThu.Size = new System.Drawing.Size(94, 29);
+            this.btnThongKeDoanhThu.TabIndex = 9;
+            this.btnThongKeDoanhThu.Text = "Thống kê";
+            this.btnThongKeDoanhThu.UseVisualStyleBackColor = false;
+            this.btnThongKeDoanhThu.Click += new System.EventHandler(this.btnThongKeDoanhThu_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(103, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 20);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Từ ngày";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(589, 25);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(36, 20);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "Đến";
+            // 
+            // dtpCheckOut
+            // 
+            this.dtpCheckOut.Location = new System.Drawing.Point(633, 20);
+            this.dtpCheckOut.Name = "dtpCheckOut";
+            this.dtpCheckOut.Size = new System.Drawing.Size(261, 27);
+            this.dtpCheckOut.TabIndex = 6;
+            // 
+            // dtpCheckIn
+            // 
+            this.dtpCheckIn.Location = new System.Drawing.Point(182, 20);
+            this.dtpCheckIn.Name = "dtpCheckIn";
+            this.dtpCheckIn.Size = new System.Drawing.Size(262, 27);
+            this.dtpCheckIn.TabIndex = 5;
+            // 
+            // dtgvDoanhThu
+            // 
+            this.dtgvDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDoanhThu.Location = new System.Drawing.Point(5, 67);
+            this.dtgvDoanhThu.Name = "dtgvDoanhThu";
+            this.dtgvDoanhThu.RowHeadersWidth = 51;
+            this.dtgvDoanhThu.RowTemplate.Height = 29;
+            this.dtgvDoanhThu.Size = new System.Drawing.Size(1065, 438);
+            this.dtgvDoanhThu.TabIndex = 2;
             // 
             // tabPage4
             // 
@@ -830,19 +1256,30 @@ namespace QLyQuanAn
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.panel2.Controls.Add(this.btnThongKeHoaDon);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.dateTimePicker2);
             this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Location = new System.Drawing.Point(3, 0);
+            this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 67);
+            this.panel2.Size = new System.Drawing.Size(1070, 67);
             this.panel2.TabIndex = 1;
+            // 
+            // btnThongKeHoaDon
+            // 
+            this.btnThongKeHoaDon.Location = new System.Drawing.Point(477, 20);
+            this.btnThongKeHoaDon.Name = "btnThongKeHoaDon";
+            this.btnThongKeHoaDon.Size = new System.Drawing.Size(94, 29);
+            this.btnThongKeHoaDon.TabIndex = 9;
+            this.btnThongKeHoaDon.Text = "Thống kê";
+            this.btnThongKeHoaDon.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(163, 25);
+            this.label8.Location = new System.Drawing.Point(103, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(62, 20);
             this.label8.TabIndex = 8;
@@ -851,7 +1288,7 @@ namespace QLyQuanAn
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(576, 25);
+            this.label7.Location = new System.Drawing.Point(594, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 20);
             this.label7.TabIndex = 7;
@@ -859,14 +1296,14 @@ namespace QLyQuanAn
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(633, 20);
+            this.dateTimePicker2.Location = new System.Drawing.Point(651, 20);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(261, 27);
             this.dateTimePicker2.TabIndex = 6;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(242, 20);
+            this.dateTimePicker1.Location = new System.Drawing.Point(182, 20);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(262, 27);
             this.dateTimePicker1.TabIndex = 5;
@@ -874,11 +1311,11 @@ namespace QLyQuanAn
             // dtgvDanhMucHoaDon
             // 
             this.dtgvDanhMucHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvDanhMucHoaDon.Location = new System.Drawing.Point(6, 67);
+            this.dtgvDanhMucHoaDon.Location = new System.Drawing.Point(0, 68);
             this.dtgvDanhMucHoaDon.Name = "dtgvDanhMucHoaDon";
             this.dtgvDanhMucHoaDon.RowHeadersWidth = 51;
             this.dtgvDanhMucHoaDon.RowTemplate.Height = 29;
-            this.dtgvDanhMucHoaDon.Size = new System.Drawing.Size(1061, 475);
+            this.dtgvDanhMucHoaDon.Size = new System.Drawing.Size(1070, 480);
             this.dtgvDanhMucHoaDon.TabIndex = 0;
             // 
             // fDanhMuc
@@ -892,27 +1329,36 @@ namespace QLyQuanAn
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucFood)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudFoodGia)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLoaiMon)).EndInit();
+            this.grbDanhMucMon.ResumeLayout(false);
+            this.grbDanhMucMon.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucBan)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.tabAccount.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhMucAccount)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhThu)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -941,9 +1387,6 @@ namespace QLyQuanAn
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dtgvDanhMucFood;
-        private System.Windows.Forms.TextBox txbSearch;
         private System.Windows.Forms.ComboBox cbFoodLoai;
         private System.Windows.Forms.NumericUpDown nudFoodGia;
         private System.Windows.Forms.Button btnAnBatFood;
@@ -955,7 +1398,6 @@ namespace QLyQuanAn
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dtgvDanhMucBan;
         private System.Windows.Forms.TextBox txbSearchTable;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -969,13 +1411,11 @@ namespace QLyQuanAn
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txbTableName;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSaveTable;
         private System.Windows.Forms.TabPage tabAccount;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridView dtgvDanhMucAccount;
         private System.Windows.Forms.TextBox txbSearchAccount;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -998,5 +1438,50 @@ namespace QLyQuanAn
         private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSaveAccount;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dtgvDanhMucFood;
+        private System.Windows.Forms.TextBox txbSearch;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.DataGridView dtgvLoaiMon;
+        private System.Windows.Forms.TextBox txbSearchLoaiMon;
+        private System.Windows.Forms.GroupBox grbDanhMucMon;
+        private System.Windows.Forms.Button btnSaveLoaiMon;
+        private System.Windows.Forms.Button btnEditLoaiMon;
+        private System.Windows.Forms.Button btnInsertLoaiMon;
+        private System.Windows.Forms.TextBox txbNameLoaiMon;
+        private System.Windows.Forms.TextBox txbIDLoaiMon;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdLoaiMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaTien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdTK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Matkhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnThongKeDoanhThu;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DateTimePicker dtpCheckOut;
+        private System.Windows.Forms.DateTimePicker dtpCheckIn;
+        private System.Windows.Forms.DataGridView dtgvDoanhThu;
+        private System.Windows.Forms.Button btnThongKeHoaDon;
+        private System.Windows.Forms.Label lbPrice_DT;
+        private System.Windows.Forms.Label label22;
     }
 }

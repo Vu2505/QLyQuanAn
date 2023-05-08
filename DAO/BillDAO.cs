@@ -25,10 +25,23 @@ namespace QLyQuanAn.DAO
         /// <returns></returns>
 
         //," + "totalPrice = " + totalPrice + "
-        public void CheckOut(int id/*, float totalPrice*/)
+        public void CheckOut(int id, float tongtien)
         {
-            string query = "UPDATE dbo.HoaDon set ThoiGianRa = GETDATE(), TinhTrang = 1  where IdHD = " + id;
+            string query = "UPDATE dbo.HoaDon set ThoiGianRa = GETDATE(), TinhTrang = 1,"+"tongtien = " +tongtien  +  "  where IdHD = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
+
+        public DataTable GetBillListByDate(DateTime checkIn,DateTime checkOut)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_ThongKeDoanhThu @checkIn , @checkOut", new object[] {checkIn, checkOut });
+        }
+
+        public float GetTotalByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return float.Parse(DataProvider.Instance.ExecuteScalar("USP_TongDoanhThu @checkIn , @checkOut", 
+                new object[] { checkIn, checkOut })
+                .ToString());
         }
 
         public int GetUncheckBillIDByTableID(int id)
@@ -44,11 +57,11 @@ namespace QLyQuanAn.DAO
             return -1;
         }
 
-        public int InsertBill(int idBan, int idTK)
+        public int InsertBill(int idBan, int idTK, float tongtien)
         {
-            string query = "USP_InsertBill @idTable , @idTaiKhoan";
+            string query = "USP_InsertBill @idTable , @idTaiKhoan , @TongTien ";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { idBan, idTK });
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { idBan, idTK, tongtien });
             int id = int.Parse(result.Rows[0]["IdHD"].ToString());
             return id;
         }

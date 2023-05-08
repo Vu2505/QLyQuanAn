@@ -36,10 +36,10 @@ namespace QLyQuanAn
                 switch(item.Tinhtrang)
                 {
                     case 0:
-                        btn.BackColor = Color.Aqua;
+                        btn.BackColor = Color.FromArgb(185, 237, 221);
                         break;
                     default:
-                        btn.BackColor = Color.LightPink;
+                        btn.BackColor = Color.FromArgb(245, 243, 193);
                         break;
 
                 }
@@ -91,23 +91,24 @@ namespace QLyQuanAn
         {
             fEditBill f = new fEditBill(lsvBill.Tag as Table);
             f.Show();
-        }
-
-
-        #endregion
+        }        
 
         private void button1_Click(object sender, EventArgs e)
         {
             Table table = lsvBill.Tag as Table;
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            var tongtien = double.Parse(lbPrice.Text.Split(' ')[0].Replace('.', ','));
 
             //double finalTotalPrice = totalPrice - (totalPrice/100)
 
             if(idBill != -1)
             {
-                if(MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn "+ table.Tenban, "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                if(MessageBox.Show("Bạn có muốn thanh toán hóa đơn cho bàn " + table.Tenban 
+                    + Environment.NewLine 
+                    + "Tổng tiền: " + tongtien.ToString(), "Thông báo", MessageBoxButtons.OKCancel) 
+                    == System.Windows.Forms.DialogResult.OK)
                 {
-                    BillDAO.Instance.CheckOut(idBill/*,(float)finalTotalPrice*/);
+                    BillDAO.Instance.CheckOut(idBill, (float)tongtien);
                     ShowBill(table.ID);
                 }
             }
@@ -115,5 +116,6 @@ namespace QLyQuanAn
 
 
         }
+        #endregion
     }
 }

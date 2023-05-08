@@ -19,7 +19,8 @@ namespace QLyQuanAn
         {
             InitializeComponent();
             LoadCategory();
-            LoadMonAnList();            
+            LoadMonAnList();
+            //Storage.Display.GoFullscreen(this, false);
             //LoadCategoryIntoComboBox(cbLoaiMon);
         }
 
@@ -112,7 +113,7 @@ namespace QLyQuanAn
         private void cbLoaiHoaDon_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if(cbLoaiHoaDon.Text == "Mang đi")
+            if (cbLoaiHoaDon.Text == "Mang đi")
             {
                 cbBan.Enabled = false;
                 idban = 21;
@@ -225,11 +226,12 @@ namespace QLyQuanAn
             if (MessageBox.Show("Bạn có muốn xác nhận hóa đơn hay không?", "Thông báo", MessageBoxButtons.YesNo)
                 == System.Windows.Forms.DialogResult.Yes)
             {
-                int idHD = BillDAO.Instance.InsertBill(idban, idTk);
+                var tongtien = float.Parse(lbPrice.Text.Split(' ')[0].Replace('.', ','));
+                int idHD = BillDAO.Instance.InsertBill(idban, idTk, tongtien);
                 int rowsAffected = TableDAO.Instance.UpdateTinhTrangBan(idban);
                 if(rowsAffected > 0)
                 {
-                    MessageBox.Show("Bàn " + cbBan.Text.ToString() + " đã được thêm");
+                    MessageBox.Show("Hóa đơn đã được thêm thành công");                    
                     LoadAddTable();
                 }
                 
@@ -239,9 +241,9 @@ namespace QLyQuanAn
                         int.Parse(i.Name),
                         int.Parse(i.SubItems[2].Text.ToString()),
                         float.Parse(i.SubItems[3].Text.ToString()));
-
-                    MessageBox.Show(i.Name);
+                    //MessageBox.Show(i.Name);
                 }
+               
                 button3_Click(null, null);
             }
 

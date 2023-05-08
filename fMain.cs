@@ -104,5 +104,18 @@ namespace QLyQuanAn
             fDoiMatKhau f = new fDoiMatKhau();
             f.Show();
         }
+
+        private void pictureBox7_MouseHover(object sender, EventArgs e)
+        {
+            //    Bitmap myimage = new Bitmap(@"D:\QlyQuanAn\QLyQuanAn\Resources\sdgdxhbfcnhf.jpg");
+            //    pictureBox7.BackgroundImage = myimage;
+        }
+
+        private void pictureBox7_MouseLeave(object sender, EventArgs e)
+        {
+            //Bitmap myimage1 = new Bitmap(@"D:\QlyQuanAn\QLyQuanAn\Resources\authentic-asian-noodle-soup-black-bowl.jpg");
+            //pictureBox7.BackgroundImage = myimage1;
+        }
+
     }
 }

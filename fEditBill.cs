@@ -165,10 +165,12 @@ namespace QLyQuanAn
                 button3_Click(null, null);
             }
 
-
-            int id1 = table.ID;
-            int id2 = (cbBan.SelectedItem as Table).ID;
-            table = TableDAO.Instance.SwitchTable(id1, id2 , idTk);
+            if (cbLoaiHoaDon.Text != "Ngồi lại")
+            {
+                int id1 = table.ID;
+                int id2 = (cbBan.SelectedItem as Table).ID;
+                table = TableDAO.Instance.SwitchTable(id1, id2, idTk);
+            }
         }
 
         private void cbLoaiMon_SelectedIndexChanged(object sender, EventArgs e)

@@ -118,13 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="products (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\products (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="55729701" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\55729701.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="products (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\products (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chair (1) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chair (1) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chair (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chair (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sdgdxhbfcnhf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sdgdxhbfcnhf1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5879" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5879.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Avatar, myself, people, profile, username icon - Download on Iconfinder (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar, myself, people, profile, username icon - Download on Iconfinder (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Profile Icon Silhouette PNG Transparent, Avatar Icon Profile Icon Member Login Vector Isolated, Login Icons, Profile Icons, Avatar Icons PNG Image For Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile Icon Silhouette PNG Transparent, Avatar Icon Profile Icon Member Login Vector Isolated, Login Icons, Profile Icons, Avatar Icons PNG Image For Free Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="authentic-asian-noodle-soup-black-bowl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\authentic-asian-noodle-soup-black-bowl1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21594192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21594191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill (1) (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill (1) (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Image For Free Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="55729703" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\55729701.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill (1) (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill (1) (1)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2159419" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2159419.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Avatar, myself, people, profile, username icon - Download on Iconfinder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Avatar, myself, people, profile, username icon - Download on Iconfinder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21594191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2159419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="55729702" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5572970.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5572970" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5572970.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21594193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21594192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
