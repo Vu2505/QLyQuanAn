@@ -21,7 +21,7 @@ namespace QLyQuanAn.DAO
         public List<Category> GetListCategory()
         {
             List<Category> list = new List<Category>();
-            string query = "select * from LoaiMon";
+            string query = "select * from LoaiMon where IdLoaiMon <> 1";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)

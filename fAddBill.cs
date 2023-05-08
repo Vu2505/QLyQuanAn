@@ -140,7 +140,6 @@ namespace QLyQuanAn
             }
         }
 
-
         int IdMon;
         private void dtgvMon_CellClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -30,7 +30,7 @@ namespace QLyQuanAn
             dtgvDanhMucAccount.DataSource = accountlist;
             dtgvLoaiMon.DataSource = categorylist;
             LoadListBan();
-            LoadListHoaDon();
+            //LoadListHoaDon();
             LoadListFood();
             LoadListAccount();
             LoadListCategory();
@@ -534,6 +534,17 @@ namespace QLyQuanAn
         private void btnThongKeDoanhThu_Click(object sender, EventArgs e)
         {
             LoadListBillByDate(dtpCheckIn.Value, dtpCheckOut.Value);
+        }
+
+
+        void LoadListHistoryBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            dtgvDanhMucHoaDon.DataSource = BillDAO.Instance.GetHistoryBillByDate(checkIn, checkOut);
+        }
+
+        private void btnThongKeHoaDon_Click(object sender, EventArgs e)
+        {
+            LoadListHistoryBillByDate(dtpToHistoryBill.Value, dtpFromHistoryBill.Value);
         }
     }
 }

@@ -140,8 +140,8 @@ namespace QLyQuanAn
             this.btnThongKeHoaDon = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFromHistoryBill = new System.Windows.Forms.DateTimePicker();
+            this.dtpToHistoryBill = new System.Windows.Forms.DateTimePicker();
             this.dtgvDanhMucHoaDon = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -1260,8 +1260,8 @@ namespace QLyQuanAn
             this.panel2.Controls.Add(this.btnThongKeHoaDon);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dtpFromHistoryBill);
+            this.panel2.Controls.Add(this.dtpToHistoryBill);
             this.panel2.Location = new System.Drawing.Point(0, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1070, 67);
@@ -1269,12 +1269,15 @@ namespace QLyQuanAn
             // 
             // btnThongKeHoaDon
             // 
+            this.btnThongKeHoaDon.BackColor = System.Drawing.Color.White;
+            this.btnThongKeHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThongKeHoaDon.Location = new System.Drawing.Point(477, 20);
             this.btnThongKeHoaDon.Name = "btnThongKeHoaDon";
             this.btnThongKeHoaDon.Size = new System.Drawing.Size(94, 29);
             this.btnThongKeHoaDon.TabIndex = 9;
             this.btnThongKeHoaDon.Text = "Thống kê";
-            this.btnThongKeHoaDon.UseVisualStyleBackColor = true;
+            this.btnThongKeHoaDon.UseVisualStyleBackColor = false;
+            this.btnThongKeHoaDon.Click += new System.EventHandler(this.btnThongKeHoaDon_Click);
             // 
             // label8
             // 
@@ -1294,19 +1297,19 @@ namespace QLyQuanAn
             this.label7.TabIndex = 7;
             this.label7.Text = "Đến";
             // 
-            // dateTimePicker2
+            // dtpFromHistoryBill
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(651, 20);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(261, 27);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dtpFromHistoryBill.Location = new System.Drawing.Point(651, 20);
+            this.dtpFromHistoryBill.Name = "dtpFromHistoryBill";
+            this.dtpFromHistoryBill.Size = new System.Drawing.Size(261, 27);
+            this.dtpFromHistoryBill.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpToHistoryBill
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(182, 20);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(262, 27);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpToHistoryBill.Location = new System.Drawing.Point(182, 20);
+            this.dtpToHistoryBill.Name = "dtpToHistoryBill";
+            this.dtpToHistoryBill.Size = new System.Drawing.Size(262, 27);
+            this.dtpToHistoryBill.TabIndex = 5;
             // 
             // dtgvDanhMucHoaDon
             // 
@@ -1395,8 +1398,8 @@ namespace QLyQuanAn
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFromHistoryBill;
+        private System.Windows.Forms.DateTimePicker dtpToHistoryBill;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtgvDanhMucBan;
         private System.Windows.Forms.TextBox txbSearchTable;

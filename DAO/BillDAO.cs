@@ -37,6 +37,11 @@ namespace QLyQuanAn.DAO
             return DataProvider.Instance.ExecuteQuery("exec USP_ThongKeDoanhThu @checkIn , @checkOut", new object[] {checkIn, checkOut });
         }
 
+        public DataTable GetHistoryBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_LichSuHoaDon @checkIn , @checkOut", new object[] { checkIn, checkOut });
+        }
+
         public float GetTotalByDate(DateTime checkIn, DateTime checkOut)
         {
             return float.Parse(DataProvider.Instance.ExecuteScalar("USP_TongDoanhThu @checkIn , @checkOut", 
