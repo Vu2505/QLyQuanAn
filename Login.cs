@@ -44,10 +44,20 @@ namespace QLyQuanAn
             if (acc != null)
             {
                 Storage.Account.SetAccount(acc);
-                fMain f = new fMain();
-                this.Hide();
-                f.ShowDialog();
 
+                if(acc.LoaiTaiKhoan ==1)
+                {
+                    fMain f = new fMain();
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else
+                {
+                    fMainNV f = new fMainNV();
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                
                 txbPassWord.Text = "";
                 this.Show();
             }

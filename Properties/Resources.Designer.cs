@@ -163,6 +163,16 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap authentic_asian_noodle_soup_black_bowl1 {
+            get {
+                object obj = ResourceManager.GetObject("authentic-asian-noodle-soup-black-bowl1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Avatar__myself__people__profile__username_icon___Download_on_Iconfinder {
             get {
                 object obj = ResourceManager.GetObject("Avatar, myself, people, profile, username icon - Download on Iconfinder", resourceCulture);

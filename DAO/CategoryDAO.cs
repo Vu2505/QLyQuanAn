@@ -21,6 +21,21 @@ namespace QLyQuanAn.DAO
         public List<Category> GetListCategory()
         {
             List<Category> list = new List<Category>();
+            string query = "select * from LoaiMon ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Category category = new Category(item);
+                list.Add(category);
+            }
+
+            return list;
+        }
+
+        public List<Category> GetListCategory1()
+        {
+            List<Category> list = new List<Category>();
             string query = "select * from LoaiMon where IdLoaiMon <> 1";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -32,6 +47,7 @@ namespace QLyQuanAn.DAO
 
             return list;
         }
+
 
         public Category GetCategoryByID(int id)
         {

@@ -59,7 +59,7 @@ namespace QLyQuanAn
 
         void LoadListCategory()
         {
-            categorylist.DataSource = CategoryDAO.Instance.GetListCategory();
+            categorylist.DataSource = CategoryDAO.Instance.GetListCategory1();
             AddCategoryBinding();
         }
 
@@ -237,11 +237,11 @@ namespace QLyQuanAn
 
         
 
-        void LoadListHoaDon()
-        {
-            string query = "Select * from HoaDon";
-            dtgvDanhMucHoaDon.DataSource = DataProvider.Instance.ExecuteQuery(query);
-        }
+        //void LoadListHoaDon()
+        //{
+        //    string query = "Select * from HoaDon";
+        //    dtgvDanhMucHoaDon.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        //}
 
         List<Food> SearchFoodByName(string name)
         {
