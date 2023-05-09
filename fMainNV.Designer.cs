@@ -82,7 +82,7 @@ namespace QLyQuanAn
             this.lbNAmeNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNAmeNV.AutoSize = true;
-            this.lbNAmeNV.Location = new System.Drawing.Point(931, 33);
+            this.lbNAmeNV.Location = new System.Drawing.Point(931, 26);
             this.lbNAmeNV.Name = "lbNAmeNV";
             this.lbNAmeNV.Size = new System.Drawing.Size(69, 20);
             this.lbNAmeNV.TabIndex = 42;
@@ -115,7 +115,7 @@ namespace QLyQuanAn
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BackgroundImage = global::QLyQuanAn.Properties.Resources.authentic_asian_noodle_soup_black_bowl1;
+            this.panel2.BackgroundImage = global::QLyQuanAn.Properties.Resources.z4331638644483_12d64b6f122e057edacf62e0f340d416;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBox10);
@@ -137,6 +137,7 @@ namespace QLyQuanAn
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(87, 71);
             this.panel4.TabIndex = 38;
+            this.panel4.Click += new System.EventHandler(this.ptbAddBill_Click);
             // 
             // pictureBox10
             // 
@@ -148,6 +149,7 @@ namespace QLyQuanAn
             this.pictureBox10.Size = new System.Drawing.Size(90, 90);
             this.pictureBox10.TabIndex = 32;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.ptbTable_Click);
             // 
             // label2
             // 
@@ -160,6 +162,7 @@ namespace QLyQuanAn
             this.label2.Size = new System.Drawing.Size(137, 31);
             this.label2.TabIndex = 27;
             this.label2.Text = "Quản lý bàn";
+            this.label2.Click += new System.EventHandler(this.ptbTable_Click);
             // 
             // label1
             // 
@@ -172,6 +175,7 @@ namespace QLyQuanAn
             this.label1.Size = new System.Drawing.Size(147, 31);
             this.label1.TabIndex = 26;
             this.label1.Text = "Tạo Hóa Đơn";
+            this.label1.Click += new System.EventHandler(this.ptbAddBill_Click);
             // 
             // ptbAddBill
             // 

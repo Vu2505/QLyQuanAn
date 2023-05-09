@@ -96,6 +96,7 @@ namespace QLyQuanAn
             // 
             // dtgvMon
             // 
+            this.dtgvMon.BackgroundColor = System.Drawing.Color.White;
             this.dtgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvMon.Location = new System.Drawing.Point(0, 51);
             this.dtgvMon.Name = "dtgvMon";
@@ -239,7 +240,7 @@ namespace QLyQuanAn
             this.Controls.Add(this.cbLoaiMon);
             this.Controls.Add(this.dtgvMon);
             this.Name = "fEditBill";
-            this.Text = "fEditBill";
+            this.Text = "Sửa hóa đơn bàn -1";
             ((System.ComponentModel.ISupportInitialize)(this.nudSoluong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvMon)).EndInit();
             this.panel3.ResumeLayout(false);

@@ -466,9 +466,13 @@ namespace QLyQuanAn
             {
                 TableDAO.Instance.UpdateBatTinhTrangTable(id);
             }
-            else
+            else if(txbTableTinhTrang.Text == "2")
             {
                 TableDAO.Instance.UpdateTatTinhTrangTable(id);
+            }
+            else
+            {
+                MessageBox.Show("Bàn đang có khách không thể bật/ẩn");
             }
             LoadListBan();
         }
@@ -508,12 +512,12 @@ namespace QLyQuanAn
                 int id = Convert.ToInt32(txbIDLoaiMon.Text);
                 if (CategoryDAO.Instance.UpdateCategoryFood(id, name))
                 {
-                    MessageBox.Show("Sửa bàn thành công");
+                    MessageBox.Show("Sửa loại món thành công");
                     LoadListCategory();
                 }
                 else
                 {
-                    MessageBox.Show("Lỗi khi Sửa bàn");
+                    MessageBox.Show("Lỗi khi Sửa loại món");
                 }
             }
 
@@ -545,6 +549,25 @@ namespace QLyQuanAn
         private void btnThongKeHoaDon_Click(object sender, EventArgs e)
         {
             LoadListHistoryBillByDate(dtpToHistoryBill.Value, dtpFromHistoryBill.Value);
+        }
+
+        private void btnResetPassword_Click(object sender, EventArgs e)
+        {        
+                
+            if (txbLoaiAccount.Text == "0")
+            {
+                int id = Convert.ToInt32(txbIDAccount.Text);
+                if (AccountDAO.Instance.UpdateResetPassWordAccount(id))
+                {
+                    MessageBox.Show("Reset tài khoản thành công");
+                    LoadListAccount();
+                }
+            }
+            else if (txbLoaiAccount.Text == "1")
+            {
+                MessageBox.Show("không thể reset mật khẩu của quản lý");
+            }
+            LoadListAccount();
         }
     }
 }

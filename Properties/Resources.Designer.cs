@@ -103,6 +103,26 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _345854244_910230230418087_8625777696529251503_n {
+            get {
+                object obj = ResourceManager.GetObject("345854244_910230230418087_8625777696529251503_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _345854244_910230230418087_8625777696529251503_n1 {
+            get {
+                object obj = ResourceManager.GetObject("345854244_910230230418087_8625777696529251503_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5572970 {
             get {
                 object obj = ResourceManager.GetObject("5572970", resourceCulture);
@@ -153,6 +173,16 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anh_do_an_menu_background_090705553 {
+            get {
+                object obj = ResourceManager.GetObject("anh-do-an-menu-background_090705553", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap authentic_asian_noodle_soup_black_bowl {
             get {
                 object obj = ResourceManager.GetObject("authentic-asian-noodle-soup-black-bowl", resourceCulture);
@@ -186,6 +216,26 @@ namespace QLyQuanAn.Properties {
         internal static System.Drawing.Bitmap Avatar__myself__people__profile__username_icon___Download_on_Iconfinder__1_ {
             get {
                 object obj = ResourceManager.GetObject("Avatar, myself, people, profile, username icon - Download on Iconfinder (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgoundmain {
+            get {
+                object obj = ResourceManager.GetObject("backgoundmain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background_chup_anh_mon_an_dep_024945521 {
+            get {
+                object obj = ResourceManager.GetObject("background-chup-anh-mon-an-dep_024945521", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +323,26 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hinh_background_dep_do_an {
+            get {
+                object obj = ResourceManager.GetObject("Hinh-background-dep-do-an", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_powerpoint_chu_de_mon_an_dep_don_gian {
+            get {
+                object obj = ResourceManager.GetObject("hinh-nen-powerpoint-chu-de-mon-an-dep-don-gian", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lock_Icon_Clipart_PNG_Images__Vector_Lock_Icon__Lock_Icons__Lock__Secure_PNG_Image_For_Free_Download {
             get {
                 object obj = ResourceManager.GetObject("Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Imag" +
@@ -299,6 +369,26 @@ namespace QLyQuanAn.Properties {
             get {
                 object obj = ResourceManager.GetObject("Lock Icon Clipart PNG Images, Vector Lock Icon, Lock Icons, Lock, Secure PNG Imag" +
                         "e For Free Download2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lovepik_gourmet_background_picture_400152283 {
+            get {
+                object obj = ResourceManager.GetObject("lovepik-gourmet-background-picture_400152283", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_food_overlooking_the_background_banner_picture_image_1055258 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-food-overlooking-the-background-banner-picture-image_1055258", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -351,6 +441,36 @@ namespace QLyQuanAn.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4329928433288_95bde716ee1347c5f6537fd328beb1a7 {
+            get {
+                object obj = ResourceManager.GetObject("z4329928433288_95bde716ee1347c5f6537fd328beb1a7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4329928433288_95bde716ee1347c5f6537fd328beb1a71 {
+            get {
+                object obj = ResourceManager.GetObject("z4329928433288_95bde716ee1347c5f6537fd328beb1a71", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4331638644483_12d64b6f122e057edacf62e0f340d416 {
+            get {
+                object obj = ResourceManager.GetObject("z4331638644483_12d64b6f122e057edacf62e0f340d416", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

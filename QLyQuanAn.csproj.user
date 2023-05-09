@@ -19,6 +19,9 @@
     <Compile Update="fMainNV.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="fMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="fNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>

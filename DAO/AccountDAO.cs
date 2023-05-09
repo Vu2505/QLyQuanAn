@@ -106,6 +106,22 @@ namespace QLyQuanAn.DAO
             return result > 0;
         }
 
+        public bool ResetUpdatePassAccount(string username, string matkhaumoi)
+        {
+            string query = string.Format("SP_ResetUpdate_Pass @Username , @NewPass");
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { username , matkhaumoi });
+            return result > 0;
+        }
+
+        public bool UpdateResetPassWordAccount(int IdTK)
+        {
+            string query = string.Format("Update dbo.TaiKhoan " +
+                         " set LoaiTaiKhoan = 2 , Matkhau = '' " +
+                         "where IdTK ={0} ", IdTK);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
 
     }
 }

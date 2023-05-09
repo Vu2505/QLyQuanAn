@@ -85,15 +85,15 @@ namespace QLyQuanAn
         {
             if (checkboxhienthi.Checked)
             {
-                txbPassword.PasswordChar = (char)0;
-                txbNewPassword.PasswordChar = (char)0;
-                txbAgainNewPassword.PasswordChar = (char)0;
+                txbPassword.UseSystemPasswordChar = false;
+                txbNewPassword.UseSystemPasswordChar = false;
+                txbAgainNewPassword.UseSystemPasswordChar = false;
             }
             else
             {
-                txbPassword.PasswordChar = '*';
-                txbNewPassword.PasswordChar = '*';
-                txbAgainNewPassword.PasswordChar = '*';
+                txbPassword.UseSystemPasswordChar = true;
+                txbNewPassword.UseSystemPasswordChar = true;
+                txbAgainNewPassword.UseSystemPasswordChar = true;
             }
         }
 
@@ -103,11 +103,13 @@ namespace QLyQuanAn
             {
                 ptbDeny.Visible = true;
                 ptbAccept.Visible = false;
+                btnUpdate.Enabled = false;
             }
             else
             {
                 ptbDeny.Visible = false;
                 ptbAccept.Visible = true;
+                btnUpdate.Enabled = true;
             }
         }
 

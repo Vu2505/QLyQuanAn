@@ -27,26 +27,30 @@ namespace QLyQuanAn
 
             foreach(Table item in tableList)
             {
-                Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
-                btn.Text = item.Tenban + Environment.NewLine 
-                    + (item.Tinhtrang == 1 ? "Có khách" : "Trống");
-                btn.Click += btn_Click;
-                btn.Tag = item;
-
-                switch(item.Tinhtrang)
+               int tinhtrangban = item.Tinhtrang;
+               if(tinhtrangban == 1 || tinhtrangban == 0)
                 {
-                    case 0:
-                        btn.BackColor = Color.FromArgb(185, 237, 221);
-                        break;
-                    default:
-                        btn.BackColor = Color.FromArgb(245, 243, 193);
-                        break;
+                    Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
+                    btn.Text = item.Tenban + Environment.NewLine
+                        + (item.Tinhtrang == 1 ? "Có khách" : "Trống");
+                    btn.Click += btn_Click;
+                    btn.Tag = item;
 
+                    switch (item.Tinhtrang)
+                    {
+                        case 0:
+                            btn.BackColor = Color.FromArgb(185, 237, 221);
+                            break;
+                        default:
+                            btn.BackColor = Color.FromArgb(245, 243, 193);
+                            break;
+
+                    }
+                    flpBan.Controls.Add(btn);
                 }
-                
-                flpBan.Controls.Add(btn);
             }
         }
+
         void ShowBill(int id)
         {
             lsvBill.Items.Clear();
@@ -80,6 +84,10 @@ namespace QLyQuanAn
         #endregion
 
         #region Events
+        void LoadTableEvent(object sender, EventArgs e)
+        {
+            LoadTable();
+        }
         void btn_Click(object sender, EventArgs e)
         {
             int tableID = ((sender as Button).Tag as Table).ID;
@@ -90,6 +98,7 @@ namespace QLyQuanAn
         private void button3_Click(object sender, EventArgs e)
         {
             fEditBill f = new fEditBill(lsvBill.Tag as Table);
+            Storage.Events.UpdateTable += LoadTableEvent;
             f.Show();
         }        
 

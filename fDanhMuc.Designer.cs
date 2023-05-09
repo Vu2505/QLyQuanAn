@@ -107,7 +107,7 @@ namespace QLyQuanAn
             this.txbSearchAccount = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnSaveAccount = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnResetPassword = new System.Windows.Forms.Button();
             this.txbPassWord = new System.Windows.Forms.TextBox();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.txbGhiChuAccount = new System.Windows.Forms.TextBox();
@@ -230,6 +230,7 @@ namespace QLyQuanAn
             // 
             this.dtgvDanhMucFood.AllowUserToOrderColumns = true;
             this.dtgvDanhMucFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDanhMucFood.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDanhMucFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDanhMucFood.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdMon,
@@ -484,6 +485,7 @@ namespace QLyQuanAn
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage5.Controls.Add(this.groupBox7);
             this.tabPage5.Controls.Add(this.grbDanhMucMon);
@@ -493,16 +495,15 @@ namespace QLyQuanAn
             this.tabPage5.Size = new System.Drawing.Size(1070, 548);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Danh mục món";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.White;
             this.groupBox7.Controls.Add(this.dtgvLoaiMon);
             this.groupBox7.Controls.Add(this.txbSearchLoaiMon);
-            this.groupBox7.Location = new System.Drawing.Point(12, 200);
+            this.groupBox7.Location = new System.Drawing.Point(10, 163);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1044, 338);
+            this.groupBox7.Size = new System.Drawing.Size(1052, 378);
             this.groupBox7.TabIndex = 5;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Thông tin món ăn";
@@ -511,6 +512,7 @@ namespace QLyQuanAn
             // 
             this.dtgvLoaiMon.AllowUserToOrderColumns = true;
             this.dtgvLoaiMon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvLoaiMon.BackgroundColor = System.Drawing.Color.White;
             this.dtgvLoaiMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvLoaiMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdLoaiMon,
@@ -519,7 +521,7 @@ namespace QLyQuanAn
             this.dtgvLoaiMon.Name = "dtgvLoaiMon";
             this.dtgvLoaiMon.RowHeadersWidth = 51;
             this.dtgvLoaiMon.RowTemplate.Height = 29;
-            this.dtgvLoaiMon.Size = new System.Drawing.Size(1044, 271);
+            this.dtgvLoaiMon.Size = new System.Drawing.Size(1052, 271);
             this.dtgvLoaiMon.TabIndex = 18;
             // 
             // IdLoaiMon
@@ -554,9 +556,9 @@ namespace QLyQuanAn
             this.grbDanhMucMon.Controls.Add(this.txbIDLoaiMon);
             this.grbDanhMucMon.Controls.Add(this.label24);
             this.grbDanhMucMon.Controls.Add(this.label25);
-            this.grbDanhMucMon.Location = new System.Drawing.Point(12, 11);
+            this.grbDanhMucMon.Location = new System.Drawing.Point(10, 6);
             this.grbDanhMucMon.Name = "grbDanhMucMon";
-            this.grbDanhMucMon.Size = new System.Drawing.Size(1046, 183);
+            this.grbDanhMucMon.Size = new System.Drawing.Size(1052, 148);
             this.grbDanhMucMon.TabIndex = 4;
             this.grbDanhMucMon.TabStop = false;
             this.grbDanhMucMon.Text = "Thông tin chi tiết món ăn";
@@ -565,7 +567,7 @@ namespace QLyQuanAn
             // 
             this.btnSaveLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnSaveLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaveLoaiMon.Location = new System.Drawing.Point(238, 132);
+            this.btnSaveLoaiMon.Location = new System.Drawing.Point(238, 89);
             this.btnSaveLoaiMon.Name = "btnSaveLoaiMon";
             this.btnSaveLoaiMon.Size = new System.Drawing.Size(94, 29);
             this.btnSaveLoaiMon.TabIndex = 21;
@@ -577,7 +579,7 @@ namespace QLyQuanAn
             // 
             this.btnEditLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnEditLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditLoaiMon.Location = new System.Drawing.Point(124, 132);
+            this.btnEditLoaiMon.Location = new System.Drawing.Point(124, 89);
             this.btnEditLoaiMon.Name = "btnEditLoaiMon";
             this.btnEditLoaiMon.Size = new System.Drawing.Size(94, 29);
             this.btnEditLoaiMon.TabIndex = 13;
@@ -589,7 +591,7 @@ namespace QLyQuanAn
             // 
             this.btnInsertLoaiMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
             this.btnInsertLoaiMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsertLoaiMon.Location = new System.Drawing.Point(14, 131);
+            this.btnInsertLoaiMon.Location = new System.Drawing.Point(14, 88);
             this.btnInsertLoaiMon.Name = "btnInsertLoaiMon";
             this.btnInsertLoaiMon.Size = new System.Drawing.Size(94, 29);
             this.btnInsertLoaiMon.TabIndex = 12;
@@ -599,14 +601,14 @@ namespace QLyQuanAn
             // 
             // txbNameLoaiMon
             // 
-            this.txbNameLoaiMon.Location = new System.Drawing.Point(144, 83);
+            this.txbNameLoaiMon.Location = new System.Drawing.Point(540, 36);
             this.txbNameLoaiMon.Name = "txbNameLoaiMon";
             this.txbNameLoaiMon.Size = new System.Drawing.Size(208, 27);
             this.txbNameLoaiMon.TabIndex = 7;
             // 
             // txbIDLoaiMon
             // 
-            this.txbIDLoaiMon.Location = new System.Drawing.Point(144, 38);
+            this.txbIDLoaiMon.Location = new System.Drawing.Point(113, 38);
             this.txbIDLoaiMon.Name = "txbIDLoaiMon";
             this.txbIDLoaiMon.Size = new System.Drawing.Size(208, 27);
             this.txbIDLoaiMon.TabIndex = 6;
@@ -614,7 +616,7 @@ namespace QLyQuanAn
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(14, 83);
+            this.label24.Location = new System.Drawing.Point(410, 36);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(118, 20);
             this.label24.TabIndex = 1;
@@ -656,6 +658,7 @@ namespace QLyQuanAn
             // dtgvDanhMucBan
             // 
             this.dtgvDanhMucBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDanhMucBan.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDanhMucBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDanhMucBan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdBan,
@@ -866,6 +869,7 @@ namespace QLyQuanAn
             // 
             this.dtgvDanhMucAccount.AllowUserToOrderColumns = true;
             this.dtgvDanhMucAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDanhMucAccount.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDanhMucAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDanhMucAccount.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdTK,
@@ -943,7 +947,7 @@ namespace QLyQuanAn
             // 
             this.groupBox6.BackColor = System.Drawing.Color.White;
             this.groupBox6.Controls.Add(this.btnSaveAccount);
-            this.groupBox6.Controls.Add(this.button1);
+            this.groupBox6.Controls.Add(this.btnResetPassword);
             this.groupBox6.Controls.Add(this.txbPassWord);
             this.groupBox6.Controls.Add(this.txbUserName);
             this.groupBox6.Controls.Add(this.txbGhiChuAccount);
@@ -979,15 +983,16 @@ namespace QLyQuanAn
             this.btnSaveAccount.UseVisualStyleBackColor = false;
             this.btnSaveAccount.Click += new System.EventHandler(this.btnSaveAccount_Click);
             // 
-            // button1
+            // btnResetPassword
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
-            this.button1.Location = new System.Drawing.Point(835, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnResetPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(237)))), ((int)(((byte)(221)))));
+            this.btnResetPassword.Location = new System.Drawing.Point(835, 129);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.Size = new System.Drawing.Size(94, 29);
+            this.btnResetPassword.TabIndex = 25;
+            this.btnResetPassword.Text = "Reset";
+            this.btnResetPassword.UseVisualStyleBackColor = false;
+            this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
             // 
             // txbPassWord
             // 
@@ -1234,6 +1239,7 @@ namespace QLyQuanAn
             // 
             // dtgvDoanhThu
             // 
+            this.dtgvDoanhThu.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDoanhThu.Location = new System.Drawing.Point(5, 67);
             this.dtgvDoanhThu.Name = "dtgvDoanhThu";
@@ -1313,6 +1319,7 @@ namespace QLyQuanAn
             // 
             // dtgvDanhMucHoaDon
             // 
+            this.dtgvDanhMucHoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dtgvDanhMucHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDanhMucHoaDon.Location = new System.Drawing.Point(0, 68);
             this.dtgvDanhMucHoaDon.Name = "dtgvDanhMucHoaDon";
@@ -1439,7 +1446,7 @@ namespace QLyQuanAn
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.TextBox txbUserName;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnResetPassword;
         private System.Windows.Forms.Button btnSaveAccount;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox3;

@@ -47,7 +47,7 @@ namespace QLyQuanAn.DAO
         {
             List<Table> tableList = new List<Table>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery("select * From Ban where TinhTrang = 0");
+            DataTable data = DataProvider.Instance.ExecuteQuery("select * From Ban where TinhTrang = 0 AND TinhTrang <> 2");
 
             foreach (DataRow item in data.Rows)
             {
@@ -119,7 +119,7 @@ namespace QLyQuanAn.DAO
         public bool UpdateBatTinhTrangTable(int IdBan)
         {
             string query = string.Format("Update dbo.Ban " +
-                         " set TinhTrang = 1" +
+                         " set TinhTrang = 2" +
                          "where IdBan ={0} ", IdBan);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

@@ -37,6 +37,7 @@ namespace QLyQuanAn
             this.table = table;
             ShowBill(table.ID);
             GetBillId(table.ID);
+            this.Text = "Sửa hóa đơn " + table.Tenban;
         }
 
         void LoadMonAnList()
@@ -160,9 +161,8 @@ namespace QLyQuanAn
                                         int.Parse(monMoi.SubItems[2].Text.ToString()),
                                         float.Parse(monMoi.SubItems[3].Text.ToString()));
                 }
-
                                               
-                button3_Click(null, null);
+                button3_Click(null, null);                
             }
 
             if (cbLoaiHoaDon.Text != "Ngồi lại")
@@ -171,6 +171,8 @@ namespace QLyQuanAn
                 int id2 = (cbBan.SelectedItem as Table).ID;
                 table = TableDAO.Instance.SwitchTable(id1, id2, idTk);
             }
+            Storage.Events.InvokeUpdateTable();
+            this.Close();
         }
 
         private void cbLoaiMon_SelectedIndexChanged(object sender, EventArgs e)

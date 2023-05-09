@@ -74,7 +74,7 @@ namespace QLyQuanAn
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(670, 529);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 45);
+            this.button3.Size = new System.Drawing.Size(129, 45);
             this.button3.TabIndex = 4;
             this.button3.Text = "Sửa";
             this.button3.UseVisualStyleBackColor = false;
@@ -95,9 +95,9 @@ namespace QLyQuanAn
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(823, 529);
+            this.button1.Location = new System.Drawing.Point(822, 529);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 45);
+            this.button1.Size = new System.Drawing.Size(123, 45);
             this.button1.TabIndex = 2;
             this.button1.Text = "Thanh toán";
             this.button1.UseVisualStyleBackColor = false;

@@ -264,6 +264,7 @@ namespace QLyQuanAn
             // 
             this.dtgvMon.AllowUserToAddRows = false;
             this.dtgvMon.AllowUserToDeleteRows = false;
+            this.dtgvMon.BackgroundColor = System.Drawing.Color.White;
             this.dtgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvMon.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvMon.Location = new System.Drawing.Point(8, 50);

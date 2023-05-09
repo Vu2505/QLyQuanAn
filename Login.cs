@@ -18,6 +18,11 @@ namespace QLyQuanAn
         {
             InitializeComponent();
         }
+        public fLogin(string username)
+        {
+            InitializeComponent();
+            txbUserName.Text = username;
+        }
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -31,35 +36,53 @@ namespace QLyQuanAn
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String userName = txbUserName.Text;
+            string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
+
+
             if(userName == null || userName == "" 
                 || passWord == null || passWord == "")
             {
                 MessageBox.Show("Chưa nhập username hay password");
                 return;
             }
-
             Account acc = Login(userName, passWord);
             if (acc != null)
             {
-                Storage.Account.SetAccount(acc);
-
-                if(acc.LoaiTaiKhoan ==1)
+                if(acc.TinhTrang == 1)
                 {
-                    fMain f = new fMain();
-                    this.Hide();
-                    f.ShowDialog();
+                    if (acc.LoaiTaiKhoan == 2)
+                    {
+                        this.Hide();
+                        fMatKhau f = new fMatKhau(acc.Username);
+                        f.ShowDialog();
+                        return;
+                    }
+
+                    Storage.Account.SetAccount(acc);
+                    if (acc.LoaiTaiKhoan == 1)
+                    {
+                        fMain f = new fMain();
+                        this.Hide();
+                        f.ShowDialog();
+                    }
+                    else
+                    {
+                        fMainNV f = new fMainNV();
+                        this.Hide();
+                        f.ShowDialog();
+                    }
+
+                    txbPassWord.Text = "";
+                    this.Show();
+
+                    return;
                 }
                 else
                 {
-                    fMainNV f = new fMainNV();
-                    this.Hide();
-                    f.ShowDialog();
+                    MessageBox.Show("Tài khoản bị vô hiệu hóa");
                 }
                 
-                txbPassWord.Text = "";
-                this.Show();
             }
             else
             {
