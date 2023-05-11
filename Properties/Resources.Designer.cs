@@ -233,6 +233,16 @@ namespace QLyQuanAn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgoundnhanvien {
+            get {
+                object obj = ResourceManager.GetObject("backgoundnhanvien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_chup_anh_mon_an_dep_024945521 {
             get {
                 object obj = ResourceManager.GetObject("background-chup-anh-mon-an-dep_024945521", resourceCulture);
@@ -471,6 +481,16 @@ namespace QLyQuanAn.Properties {
         internal static System.Drawing.Bitmap z4331638644483_12d64b6f122e057edacf62e0f340d416 {
             get {
                 object obj = ResourceManager.GetObject("z4331638644483_12d64b6f122e057edacf62e0f340d416", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4333335949605_a99c2ed8568a23b28000bf1687be19af {
+            get {
+                object obj = ResourceManager.GetObject("z4333335949605_a99c2ed8568a23b28000bf1687be19af", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

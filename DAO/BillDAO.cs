@@ -44,9 +44,10 @@ namespace QLyQuanAn.DAO
 
         public float GetTotalByDate(DateTime checkIn, DateTime checkOut)
         {
-            return float.Parse(DataProvider.Instance.ExecuteScalar("USP_TongDoanhThu @checkIn , @checkOut", 
+            string totalStr = DataProvider.Instance.ExecuteScalar("USP_TongDoanhThu @checkIn , @checkOut",
                 new object[] { checkIn, checkOut })
-                .ToString());
+                .ToString();
+            return float.Parse(totalStr.Length > 0 ? totalStr : "0");
         }
 
         public int GetUncheckBillIDByTableID(int id)

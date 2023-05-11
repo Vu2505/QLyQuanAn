@@ -115,7 +115,7 @@ namespace QLyQuanAn
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BackgroundImage = global::QLyQuanAn.Properties.Resources.z4331638644483_12d64b6f122e057edacf62e0f340d416;
+            this.panel2.BackgroundImage = global::QLyQuanAn.Properties.Resources.z4333335949605_a99c2ed8568a23b28000bf1687be19af;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.pictureBox10);
